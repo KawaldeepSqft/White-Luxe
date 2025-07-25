@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const categories = ["All", "For Sale", "New Listing"];
+const categories = ["All", "Residential", "Commercial"];
 
 const HeroSection = () => {
   const [active, setActive] = useState("All");
