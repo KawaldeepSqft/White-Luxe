@@ -39,14 +39,21 @@ const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {services.map((service, index) => (
-          <div key={index} className="flex flex-col items-center text-center p-6 hover:shadow-xl rounded-lg transition">
-            <img src={service.img} alt={service.title} className="w-48 h-48 mb-6" />
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
-            <p className="text-gray-600 text-sm">{service.description}</p>
-            <a href="#" className="text-blue-500 mt-4 inline-block font-medium hover:underline">
-              Learn More
-            </a>
-          </div>
+<div key={index} className="flex flex-col items-center text-center p-6 hover:shadow-xl rounded-lg transition">
+  <div className="w-36 h-36 flex items-center justify-center mb-6">
+    <img
+      src={service.img}
+      alt={service.title}
+      className="max-w-full max-h-full object-contain"
+    />
+  </div>
+  <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
+  <p className="text-gray-600 text-sm">{service.description}</p>
+  <a href="#" className="text-blue-500 mt-4 inline-block font-medium hover:underline">
+    Learn More
+  </a>
+</div>
+
         ))}
       </div>
     </section>
