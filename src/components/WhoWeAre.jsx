@@ -15,12 +15,12 @@ const WhoWeAre = () => {
 
         {/* Right Content */}
         <div className="text-center md:text-left">
-          <p className="text-blue-500 italic text-lg mb-2">Who we are</p>
+          <p className="text-blue-500  text-2xl bolder mb-2">Who we are</p>
           <h2 className="text-3xl md:text-5xl font-serif font-semibold text-blue-500 mb-6 leading-tight">
             Beyond Transactions, Building Relationships
           </h2>
           <p className="text-gray-700 mb-4">
-            At Holistic Realty, we believe real estate is more than an investment—it’s the foundation of your future.
+            At White Luxe, we believe real estate is more than an investment—it’s the foundation of your future.
             That’s why we take the time to understand your aspirations, offering personalized solutions that align with
             your goals.
           </p>

@@ -21,7 +21,7 @@ export default function FAQSection() {
     <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Left Section */}
       <div>
-        <h2 className="text-4xl font-bold text-[#333] mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold text-blue-600 mb-4">Frequently Asked Questions</h2>
         <p className="text-gray-500 text-lg mb-12">
           Answers to your real estate questions and concerns
         </p>

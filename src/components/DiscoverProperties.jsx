@@ -2,19 +2,19 @@ import React from 'react';
 
 const properties = [
   {
-    name: 'DLF parivana',
-    location: 'SECTOR 112, DWARKA EXPRESSWAY',
-    image: './img/banner.webp',
+    name: 'Godrej Astra',
+    location: 'Sector 54, Golf Course Road, Gurgaon',
+    image: './img/godrej-astra-popup.webp',
   },
   {
     name: 'Tulip Monsella',
-    location: 'SECTOR 63, GOLF COURSE EXTENSION',
-    image: './img/banner.webp',
+    location: 'GOLF COURSE ROAD, GURUGRAM',
+    image: './img/a438f6_f40e3430b8e540948f3c7a7e59ef26c5~mv2.avif',
   },
   {
     name: 'Tarc Ishva',
     location: 'SECTOR 106, DWARKA EXPRESSWAY',
-    image: './img/banner.webp',
+    image: './img/tarc-ishva.jpg',
   },
 ];
 

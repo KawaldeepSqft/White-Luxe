@@ -6,20 +6,20 @@ const Services = () => {
       title: 'Qualified Agents',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar leo.',
-      img: './img/Qualified.webp',
+      img: './img/Customer.svg',
    
       },
     {
       title: 'Excellent service',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar leo.',
-      img: './img/Excellent.webp',
+      img: './img/Legal-Assistance.svg',
     },
     {
       title: 'Customer Care',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar leo.',
-      img: './img/Customer.webp',
+      img: './img/doco.svg',
 
     },
   ];
@@ -27,9 +27,9 @@ const Services = () => {
   return (
     <section className="py-16 px-4 md:px-10 bg-white text-center">
       <div className="max-w-4xl mx-auto mb-10">
-        <p className="text-blue-500 font-medium tracking-widest uppercase mb-2">Buy • Rent • Sell</p>
+        <p className="text-blue-500 font-medium tracking-widest uppercase mb-2">Buy • Sell</p>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          We help people buy, rent and sell homes
+          We help people buy and sell homes
         </h2>
         <p className="text-gray-600">
           Home buying can be a stressful process, but we take the guess work out of finding a real estate agent.

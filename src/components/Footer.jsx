@@ -16,10 +16,10 @@ export default function Footer() {
 
         {/* Discover */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Discover</h3>
+          <h3 className="font-semibold text-lg mb-4 text-blue-600">Discover</h3>
           <ul className="space-y-2">
             <li className="flex items-center space-x-1">
-              <span className="text-gray-500">{'›'}</span><span>DLF parivana</span>
+              <span className="text-gray-500">{'›'}</span><span>DLF Parivana</span>
             </li>
             <li className="flex items-center space-x-1">
               <span className="text-gray-500">{'›'}</span><span>Tulip Monsella</span>
@@ -35,7 +35,7 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+          <h3 className="font-semibold text-lg mb-4 text-blue-600">Contact Us</h3>
           <ul className="space-y-3">
             <li className="flex items-start space-x-2">
               <HiOutlineLocationMarker className="mt-0.5 text-lg" />
@@ -54,7 +54,7 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div>
-          <h3 className="font-semibold text-lg mb-4">Newsletter</h3>
+          <h3 className="font-semibold text-lg mb-4 text-blue-600 ">Newsletter</h3>
           <div className="flex mb-3">
             <input
               type="email"
