@@ -9,6 +9,7 @@ import FAQSection from './components/FAQSection'
 import HeroSection from './components/HeroSection'
 import DiscoverProperties from './components/DiscoverProperties'
 import Clients from './components/Clients'
+import GodrejAstra from './components/Property/GodrejAstra'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
      <Clients/>
      <FAQSection/>
      <Footer/>
+     <GodrejAstra/>
     </>
   )
 }

@@ -8,7 +8,7 @@ const Navbar = () => {
   const navItems = ["HOME", "SEARCH", "BUY", "ABOUT", "CONTACT"];
 
   return (
-    <nav className="w-full bg-white shadow-sm px-4 md:px-10 py-6 flex items-center justify-between relative z-50">
+    <nav className="w-full bg-white shadow-sm px-3  md:px-10 md:py-4 py-3 flex items-center justify-between relative z-50">
       
       {/* Logo */}
       <div className="flex items-center gap-2 text-2xl font-bold text-[#1d3557]">
