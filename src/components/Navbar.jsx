@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaUserCircle, FaBars, FaTimes } from 'react-icons/fa';
 import { IoLocationSharp } from 'react-icons/io5';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,10 +12,13 @@ const Navbar = () => {
     <nav className="w-full bg-white shadow-sm px-3  md:px-10 md:py-4 py-3 flex items-center justify-between relative z-50">
       
       {/* Logo */}
+      <NavLink to= "/"> 
       <div className="flex items-center gap-2 text-2xl font-bold text-[#1d3557]">
         <IoLocationSharp className="text-sky-500" />
         <span className="text-[#1d3557]">Whiteluxe</span>
       </div>
+
+      </NavLink>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex items-center gap-8 font-semibold text-m text-[#1d3557] uppercase ">
