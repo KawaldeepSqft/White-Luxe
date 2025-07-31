@@ -55,7 +55,7 @@ const floorPlans = [
 
 
 const [current, setCurrent] = useState(0);
-
+  const [showModal, setShowModal] = useState(false);
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % floorPlans.length);
   };
@@ -345,68 +345,88 @@ const [current, setCurrent] = useState(0);
 
 {/* floor plan  */}
 
-  <section className="bg-white py-12 px-4 lg:px-32 text-center">
-  <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
-    FLOOR PLANS
-    <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
-  </h2>
+<section className="bg-white py-12 px-4 lg:px-32 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
+          FLOOR PLANS
+          <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
+        </h2>
 
-  <div className="relative flex items-center justify-center max-w-6xl mx-auto">
-    {/* Left Button */}
-    <button
-      onClick={prevSlide}
-      className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
-    >
-      ❮
-    </button>
+        <div className="relative flex items-center justify-center max-w-6xl mx-auto">
+          {/* Left Button */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+          >
+            ❮
+          </button>
 
-    {/* Previous Preview Image */}
-    <div className="hidden md:block absolute left-20 opacity-40 scale-90 blur-sm z-10">
-      <img
-        src={floorPlans[(current - 1 + floorPlans.length) % floorPlans.length].image}
-        alt="Previous Plan"
-        className="h-48 object-contain rounded"
-      />
-    </div>
+          {/* Previous Preview Image */}
+          <div className="hidden md:block absolute left-20 opacity-40 scale-90 blur-sm z-10">
+            <img
+              src={floorPlans[(current - 1 + floorPlans.length) % floorPlans.length].image}
+              alt="Previous Plan"
+              className="h-48 object-contain rounded"
+            />
+          </div>
 
-    {/* Main Slide */}
-   <div className="mx-12 z-20 w-[400px] h-[400px] relative overflow-hidden">
-  {floorPlans.map((plan, index) => (
-    <img
-      key={index}
-      src={plan.image}
-      alt={plan.label}
-      className={`
-        absolute top-0 left-0 w-full h-full object-contain rounded-md shadow-md transition-all duration-500 ease-in-out
-        ${index === current ? 'opacity-100 translate-x-0 z-10' : 'opacity-0 translate-x-5 z-0'}
-      `}
-    />
-  ))}
+          {/* Main Slide */}
+          <div className="mx-12 z-20 w-[400px] h-[400px] relative overflow-hidden">
+            {floorPlans.map((plan, index) => (
+              <img
+                key={index}
+                src={plan.image}
+                alt={plan.label}
+                onClick={() => setShowModal(true)}
+                className={`
+                  absolute top-0 left-0 w-full h-full object-contain rounded-md shadow-md cursor-zoom-in transition-all duration-500 ease-in-out
+                  ${index === current ? 'opacity-100 translate-x-0 z-10' : 'opacity-0 translate-x-5 z-0'}
+                `}
+              />
+            ))}
 
-  <div className="mt-4 text-[#1f1f1f] font-medium text-sm uppercase tracking-widest bg-white px-4 py-1 inline-block shadow relative z-20">
-    {floorPlans[current].label}
-  </div>
-</div>
+            <div className="mt-4 text-[#1f1f1f] font-medium text-sm uppercase tracking-widest bg-white px-4 py-1 inline-block shadow relative z-20">
+              {floorPlans[current].label}
+            </div>
+          </div>
 
-    {/* Next Preview Image */}
-    <div className="hidden md:block absolute right-20 opacity-40 scale-90 blur-sm z-10">
-      <img
-        src={floorPlans[(current + 1) % floorPlans.length].image}
-        alt="Next Plan"
-        className="h-48 object-contain rounded"
-      />
-    </div>
+          {/* Next Preview Image */}
+          <div className="hidden md:block absolute right-20 opacity-40 scale-90 blur-sm z-10">
+            <img
+              src={floorPlans[(current + 1) % floorPlans.length].image}
+              alt="Next Plan"
+              className="h-48 object-contain rounded"
+            />
+          </div>
 
-    {/* Right Button */}
-    <button
-      onClick={nextSlide}
-      className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
-    >
-      ❯
-    </button>
-  </div>
-</section>
+          {/* Right Button */}
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+          >
+            ❯
+          </button>
+        </div>
+      </section>
 
+      {/* Fullscreen Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
+          {/* Close Button */}
+          <button
+            onClick={() => setShowModal(false)}
+            className="absolute top-5 right-5 text-white text-4xl font-bold z-50"
+          >
+            &times;
+          </button>
+
+          {/* Fullscreen Image */}
+          <img
+            src={floorPlans[current].image}
+            alt={floorPlans[current].label}
+            className="max-w-full max-h-[90vh] rounded-lg shadow-lg"
+          />
+        </div>
+      )}
 
     {/* site map */}
 
