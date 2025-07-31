@@ -93,7 +93,7 @@ const HeroSection = () => {
             />
 
             {/* Button */}
-            <button className="bg-[#A3743D] hover:bg-[#A3743D] text-white px-8 py-4 text-base md:text-lg font-semibold rounded-r-full">
+            <button className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] hover:bg-[#A3743D] text-white px-8 py-4 text-base md:text-lg font-semibold rounded-r-full">
               Search
             </button>
           </div>

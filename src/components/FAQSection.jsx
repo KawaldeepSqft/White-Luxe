@@ -29,7 +29,7 @@ export default function FAQSection() {
         <p className="text-gray-500 mb-4">
           We're here to help! Don’t hesitate—ask away and get the answers you need.
         </p>
-        <button className="bg-[#A3743D] text-white px-6 py-3 rounded-md hover:bg-[#a3733dd0] transition">Contact Us</button>
+        <button className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white px-6 py-3 rounded-md hover:bg-[#a3733dd0] transition">Contact Us</button>
       </div>
 
       {/* Right Section */}

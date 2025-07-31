@@ -61,7 +61,7 @@ export default function Footer() {
               placeholder="Enter your email"
               className="w-full px-4 py-2 border border-gray-300 rounded-l focus:outline-none text-[15px]"
             />
-            <button className="bg-[#A3743D] text-white px-4 rounded-r hover:bg-[#a3733dd8] text-[15px]">Submit</button>
+            <button className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white px-4 rounded-r hover:bg-[#a3733dd8] text-[15px]">Submit</button>
           </div>
           <p>
             White Luxe - Real Estate.

@@ -104,7 +104,7 @@ const [current, setCurrent] = useState(0);
         </div>
 
         {/* Right Form Box */}
-        <div className="bg-[#9e6e2ae5] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+        <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
           <h2 className="text-2xl font-bold text-center mb-4">
             Let’s Find Your Dream Home!
           </h2>
@@ -202,7 +202,7 @@ const [current, setCurrent] = useState(0);
           <div className="overflow-x-auto rounded-xl shadow-lg">
             <table className="min-w-full border border-gray-200">
               <thead>
-                <tr className="bg-[#A3743D] text-white text-left text-sm md:text-base">
+                <tr className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white text-left text-sm md:text-base">
                   <th className="py-4 px-6">UNIT TYPE</th>
                   <th className="py-4 px-6">UNIT SIZE</th>
                   <th className="py-4 px-6">UNIT PRICE</th>

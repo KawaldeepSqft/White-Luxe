@@ -104,7 +104,7 @@ const ReqCallBack = () => {
             />
             <button
               type="submit"
-              className="w-full bg-[#A3743D] text-white py-2 rounded text-lg font-semibold tracking-wider hover:bg-[#a3733dc5] transition"
+              className="w-full bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white py-2 rounded text-lg font-semibold tracking-wider hover:bg-[#a3733dc5] transition"
             >
               SUBMIT
             </button>

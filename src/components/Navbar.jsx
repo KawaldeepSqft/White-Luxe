@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* Right Actions */}
       <div className="hidden md:flex items-center gap-4">
         {/* <FaUserCircle className="text-2xl text-[#1d3557]" /> */}
-        <button className="bg-[#A3743D] hover:bg-[#a5835c] text-white text-sm font-semibold px-4 py-2 rounded">
+        <button className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] hover:bg-[#a5835c] text-white text-sm font-semibold px-4 py-2 rounded">
          9815202102
         </button>
       </div>

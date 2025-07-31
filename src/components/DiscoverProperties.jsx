@@ -46,7 +46,7 @@ const DiscoverProperties = () => {
 
                 <p className="text-sm mt-2">{property.location}</p>
 
-                  <button className="mt-3 bg-[#A3743D] hover:bg-[#a3733dc5] text-white text-sm font-medium px-5 py-2 rounded-full">
+                  <button className="mt-3 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] hover:bg-[#a3733dc5] text-white text-sm font-medium px-5 py-2 rounded-full">
                     View Details
                   </button>
               </div>
