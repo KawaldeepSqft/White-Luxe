@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import img1 from "/public/img/background.jpg";
-import img2 from "/public/img/background2.jpg";
-import img3 from "/public/img/background.jpg";
-import img4 from "/public/img/background.jpg";
-import img5 from "/public/img/background.jpg";
-import img6 from "/public/img/background.jpg";
-import img7 from "/public/img/background.jpg";
-import img8 from "/public/img/background.jpg";
+import img1 from "/img/background.jpg";
+import img2 from "/img/background2.jpg";
+import img3 from "/img/background.jpg";
+import img4 from "/img/background.jpg";
+import img5 from "/img/background.jpg";
+import img6 from "/img/background.jpg";
+import img7 from "/img/background.jpg";
+import img8 from "/img/background.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
 const images = [img1, img2, img3, img4, img5, img6, img7, img8];
@@ -18,38 +18,38 @@ const GodrejAstra = () => {
 
 
   const amenities = [
-  { image: "/public/img/background.jpg", label: "Club House" },
-  { image: "/public/img/background.jpg", label: "Park" },
-  { image: "/public/img/background.jpg", label: "Intercom Facility" },
-  { image: "/public/img/background.jpg", label: "Swimming Pool" },
-  { image: "/public/img/background.jpg", label: "GYM" },
-  { image: "/public/img/background.jpg", label: "Community Centre" },
-  { image: "/public/img/background.jpg", label: "Security Guard" },
-  { image: "/public/img/background.jpg", label: "Maintenance Staff" },
-  { image: "/public/img/background.jpg", label: "Piped Gas" },
-  { image: "/public/img/background.jpg", label: "Visitor Parking" },
-  { image: "/public/img/background.jpg", label: "Lift" },
-  { image: "/public/img/background.jpg", label: "Kids Play Area" },
-  { image: "/public/img/background.jpg", label: "Jogging Track" },
-  { image: "/public/img/background.jpg", label: "ATMs" },
-  { image: "/public/img/background.jpg", label: "Library" },
-  { image: "/public/img/background.jpg", label: "Conference Room" },
-  { image: "/public/img/background.jpg", label: "Cafeteria/Food Court" },
-  { image: "/public/img/background.jpg", label: "Waste Disposal" },
+  { image: "/img/background.jpg", label: "Club House" },
+  { image: "/img/background.jpg", label: "Park" },
+  { image: "/img/background.jpg", label: "Intercom Facility" },
+  { image: "/img/background.jpg", label: "Swimming Pool" },
+  { image: "/img/background.jpg", label: "GYM" },
+  { image: "/img/background.jpg", label: "Community Centre" },
+  { image: "/img/background.jpg", label: "Security Guard" },
+  { image: "/img/background.jpg", label: "Maintenance Staff" },
+  { image: "/img/background.jpg", label: "Piped Gas" },
+  { image: "/img/background.jpg", label: "Visitor Parking" },
+  { image: "/img/background.jpg", label: "Lift" },
+  { image: "/img/background.jpg", label: "Kids Play Area" },
+  { image: "/img/background.jpg", label: "Jogging Track" },
+  { image: "/img/background.jpg", label: "ATMs" },
+  { image: "/img/background.jpg", label: "Library" },
+  { image: "/img/background.jpg", label: "Conference Room" },
+  { image: "/img/background.jpg", label: "Cafeteria/Food Court" },
+  { image: "/img/background.jpg", label: "Waste Disposal" },
 ];
 
 const floorPlans = [
   {
     label: "3 BHK Floor Plan",
-    image: "/public/img/background1.jpg",
+    image: "/img/background1.jpg",
   },
   {
     label: "4 BHK Floor Plan",
-    image: "/public/img/background.jpg",
+    image: "/img/background.jpg",
   },
   {
     label: "5 BHK Floor Plan",
-    image: "/public/img/DLF-Privana.jpg",
+    image: "/img/DLF-Privana.jpg",
   },
 ];
 
@@ -424,7 +424,7 @@ const [current, setCurrent] = useState(0);
       {/* Image with hover effect */}
       <div className="max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
         <img
-          src="/public/img/background.jpg" // 🔁 Replace with actual image path
+          src="/img/background.jpg" // 🔁 Replace with actual image path
           alt="Master Plan of Puri The Aravallis"
           className="w-full h-auto object-cover"
         />
