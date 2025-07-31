@@ -15,8 +15,8 @@ const WhoWeAre = () => {
 
         {/* Right Content */}
         <div className="text-center md:text-left">
-          <p className="text-blue-500  text-2xl bolder mb-2">Who we are</p>
-          <h2 className="text-3xl md:text-5xl font-serif font-semibold text-blue-500 mb-6 leading-tight">
+          <p className="text-[#444] text-2xl bolder mb-2">Who we are</p>
+          <h2 className="text-3xl md:text-5xl font-serif font-semibold text-[#A3743D] mb-6 leading-tight">
             Beyond Transactions, Building Relationships
           </h2>
           <p className="text-gray-700 mb-4">

@@ -31,8 +31,8 @@ const HeroSection = () => {
         <p className="text-white/80 mt-6 text-lg md:text-xl">
           From modern apartments to premium villas, explore curated homes across
           Gurugram’s prime locations.{" "}
-          <a href="#" className="text-blue-400 font-semibold hover:underline">
-            View Listings
+          <a href="#" className="text-[#A3743D] font-semibold hover:underline">
+            View Projects
           </a>
         </p>
 
@@ -47,8 +47,8 @@ const HeroSection = () => {
                 onClick={() => setActive(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium ${
                   active === cat
-                    ? "bg-blue-500 text-white"
-                    : "bg-white text-blue-600"
+                    ? "bg-[#A3743D] text-white"
+                    : "bg-white text-[#a3733dcb]"
                 }`}
               >
                 {cat}
@@ -63,7 +63,7 @@ const HeroSection = () => {
               placeholder="Enter a keyword"
               className="flex-1 px-4 py-3 bg-white rounded-full text-gray-800 text-sm outline-none shadow"
             />
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 text-sm font-semibold rounded-full">
+            <button className="bg-[#A3743D] hover:bg-[#a3733d9d] text-white px-5 py-3 text-sm font-semibold rounded-full">
               Search
             </button>
           </div>
@@ -76,7 +76,7 @@ const HeroSection = () => {
             <select
               value={active}
               onChange={(e) => setActive(e.target.value)}
-              className="bg-blue-500 text-white text-base md:text-lg font-semibold px-6 py-4 outline-none rounded-l-full cursor-pointer"
+              className="bg-[#A3743D] text-white text-base md:text-lg font-semibold px-2 py-2 outline-none rounded-l-full cursor-pointer"
             >
               {categories.map((cat) => (
                 <option key={cat} value={cat}>
@@ -93,7 +93,7 @@ const HeroSection = () => {
             />
 
             {/* Button */}
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-base md:text-lg font-semibold rounded-r-full">
+            <button className="bg-[#A3743D] hover:bg-[#A3743D] text-white px-8 py-4 text-base md:text-lg font-semibold rounded-r-full">
               Search
             </button>
           </div>

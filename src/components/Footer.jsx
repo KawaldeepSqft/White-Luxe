@@ -16,7 +16,7 @@ export default function Footer() {
 
         {/* Discover */}
         <div>
-          <h3 className="font-semibold text-lg mb-4 text-blue-600">Discover</h3>
+          <h3 className="font-bold text-lg mb-4 text-[#A3743D] ">Discover</h3>
           <ul className="space-y-2">
             <li className="flex items-center space-x-1">
               <span className="text-gray-500">{'›'}</span><span>DLF Parivana</span>
@@ -35,7 +35,7 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="font-semibold text-lg mb-4 text-blue-600">Contact Us</h3>
+          <h3 className="font-semibold text-lg mb-4 text-[#A3743D]">Contact Us</h3>
           <ul className="space-y-3">
             <li className="flex items-start space-x-2">
               <HiOutlineLocationMarker className="mt-0.5 text-lg" />
@@ -54,14 +54,14 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div>
-          <h3 className="font-semibold text-lg mb-4 text-blue-600 ">Newsletter</h3>
+          <h3 className="font-semibold text-lg mb-4 text-[#A3743D] ">Newsletter</h3>
           <div className="flex mb-3">
             <input
               type="email"
               placeholder="Enter your email"
               className="w-full px-4 py-2 border border-gray-300 rounded-l focus:outline-none text-[15px]"
             />
-            <button className="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600 text-[15px]">Submit</button>
+            <button className="bg-[#A3743D] text-white px-4 rounded-r hover:bg-[#a3733dd8] text-[15px]">Submit</button>
           </div>
           <p>
             White Luxe - Real Estate.

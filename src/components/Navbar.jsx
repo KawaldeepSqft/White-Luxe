@@ -13,8 +13,8 @@ const Navbar = () => {
       
       {/* Logo */}
       <NavLink to= "/"> 
-      <div className="flex items-center gap-2 text-2xl font-bold text-[#1d3557]">
-        <IoLocationSharp className="text-sky-500" />
+      <div className="flex items-center gap-2 text-2xl font-bold text-[#A3743D]">
+        <IoLocationSharp className="text-[#A3743D]" />
         <span className="text-[#1d3557]">Whiteluxe</span>
       </div>
 
@@ -23,14 +23,14 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex items-center gap-8 font-semibold text-m text-[#1d3557] uppercase ">
         {navItems.map((item, index) => (
-          <li key={index} className="cursor-pointer hover:text-blue-600">{item}</li>
+          <li key={index} className="cursor-pointer hover:text-[#A3743D]">{item}</li>
         ))}
       </ul>
 
       {/* Right Actions */}
       <div className="hidden md:flex items-center gap-4">
         {/* <FaUserCircle className="text-2xl text-[#1d3557]" /> */}
-        <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded">
+        <button className="bg-[#A3743D] hover:bg-[#a5835c] text-white text-sm font-semibold px-4 py-2 rounded">
          9815202102
         </button>
       </div>
@@ -54,12 +54,12 @@ const Navbar = () => {
               {item}
             </span>
           ))}
-          <div className="flex items-center gap-4 mt-4">
+          {/* <div className="flex items-center gap-4 mt-4">
             <FaUserCircle className="text-2xl text-[#1d3557]" />
             <button className="bg-sky-500 hover:bg-sky-600 text-white text-sm font-semibold px-4 py-2 rounded">
               CREATE A LISTING
             </button>
-          </div>
+          </div> */}
         </div>
       )}
     </nav>

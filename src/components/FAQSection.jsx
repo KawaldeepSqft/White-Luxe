@@ -21,7 +21,7 @@ export default function FAQSection() {
     <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Left Section */}
       <div>
-        <h2 className="text-4xl font-bold text-blue-600 mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold text-[#A3743D] mb-4">Frequently Asked Questions</h2>
         <p className="text-gray-500 text-lg mb-12">
           Answers to your real estate questions and concerns
         </p>
@@ -29,7 +29,7 @@ export default function FAQSection() {
         <p className="text-gray-500 mb-4">
           We're here to help! Don’t hesitate—ask away and get the answers you need.
         </p>
-        <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition">Contact Us</button>
+        <button className="bg-[#A3743D] text-white px-6 py-3 rounded-md hover:bg-[#a3733dd0] transition">Contact Us</button>
       </div>
 
       {/* Right Section */}

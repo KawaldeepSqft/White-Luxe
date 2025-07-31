@@ -27,8 +27,8 @@ const Services = () => {
   return (
     <section className="py-16 px-4 md:px-10 bg-white text-center">
       <div className="max-w-4xl mx-auto mb-10">
-        <p className="text-blue-500 font-medium tracking-widest uppercase mb-2">Buy • Sell</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <p className="text-[#A3743D] font-medium tracking-widest uppercase mb-2">Buy • Sell</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-4">
           We help people buy and sell homes
         </h2>
         <p className="text-gray-600">
@@ -49,7 +49,7 @@ const Services = () => {
   </div>
   <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
   <p className="text-gray-600 text-sm">{service.description}</p>
-  <a href="#" className="text-blue-500 mt-4 inline-block font-medium hover:underline">
+  <a href="#" className="text-[#A3743D] mt-4 inline-block font-medium hover:underline">
     Learn More
   </a>
 </div>

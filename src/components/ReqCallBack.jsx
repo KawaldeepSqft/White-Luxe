@@ -72,7 +72,7 @@ const ReqCallBack = () => {
       
         {/* Right - Form */}
         <div className="bg-white text-black p-2 rounded-lg w-full  md:p-8">
-          <h3 className="text-3xl font-serif text-blue-500 text-center mb-6">
+          <h3 className="text-3xl font-serif text-[#A3743D] text-center mb-6">
             Request a Call Back
           </h3>
           <form className="space-y-4">
@@ -104,7 +104,7 @@ const ReqCallBack = () => {
             />
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 rounded text-lg font-semibold tracking-wider hover:bg-blue-600 transition"
+              className="w-full bg-[#A3743D] text-white py-2 rounded text-lg font-semibold tracking-wider hover:bg-[#a3733dc5] transition"
             >
               SUBMIT
             </button>

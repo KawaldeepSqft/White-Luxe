@@ -1,19 +1,24 @@
-import React, { useState } from "react";
-import img1 from "/img/background.jpg";
-import img2 from "/img/background2.jpg";
-import img3 from "/img/background.jpg";
-import img4 from "/img/background.jpg";
-import img5 from "/img/background.jpg";
-import img6 from "/img/background.jpg";
+import React, { useState, useEffect } from "react";
+
+
+import img1 from "/img/Trac-ishca/g1.jpg";
+import img2 from "/img/Trac-ishca/g2.webp";
+import img3 from "/img/Trac-ishca/g3.webp";
+import img4 from "/img/Trac-ishca/g4.jpg";
+import img5 from "/img/Trac-ishca/g6.jpg";
+import img6 from "/img/Trac-ishca/g7.jpg";
 import img7 from "/img/background.jpg";
 import img8 from "/img/background.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
 const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+
+
+
 const GodrejAstra = () => {
   const units = [
-    { type: "3BHK", size: "2250 Sq.ft", price: "Price on call" },
-    { type: "4BHK", size: "2750 Sq.ft", price: "Price on call" },
+    // { type: "3BHK", size: "2250 Sq.ft", price: "Price on call" },
+    { type: "4 BHK", size: "Size on call", price: "Price on call" },
   ];
 
 
@@ -39,18 +44,18 @@ const GodrejAstra = () => {
 ];
 
 const floorPlans = [
-  {
-    label: "3 BHK Floor Plan",
-    image: "/img/background1.jpg",
-  },
+  // {
+  //   label: "3 BHK Floor Plan",
+  //   image: "/img/background1.jpg",
+  // },
   {
     label: "4 BHK Floor Plan",
-    image: "/img/background.jpg",
+    image: "/img/Trac-ishca/f1.webp"
   },
-  {
-    label: "5 BHK Floor Plan",
-    image: "/img/DLF-Privana.jpg",
-  },
+  // {
+  //   label: "5 BHK Floor Plan",
+  //   image: "/img/DLF-Privana.jpg",
+  // },
 ];
 
 
@@ -65,14 +70,18 @@ const [current, setCurrent] = useState(0);
   };
 
 
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
-    <section
-      className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/img/background2.jpg')" }}
-    >
+   <section
+  className="relative w-full h-screen bg-cover bg-center overflow-hidden"
+  style={{ backgroundImage: "url('/img/Trac-ishca/Main-banner.webp')" }}
+>
       <div className="absolute inset-0 " />
 
       {/* Content */}
@@ -81,21 +90,22 @@ const [current, setCurrent] = useState(0);
         <div className="text-white max-w-xl">
           <h4 className="text-xl font-semibold mb-2">GURGAON</h4>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            M3M Capital By M3M India
+            Tarc Ishva
           </h1>
           <p className="text-lg mb-1">Luxury Apartment</p>
-          <p className="text-lg mb-4">Sector 113, Gurgaon</p>
+          <p className="text-lg mb-4">Sector - 63A, Gurugram</p>
 
           <div className="flex items-center">
             <span className="text-xl font-semibold">Starting Price</span>
-            <span className="bg-white text-blue-600 text-xl font-bold px-4 py-1 rounded ml-2">
-              ₹ 2.54 Cr*
+            <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
+              ₹ 9.7 Cr*
             </span>
           </div>
         </div>
 
         {/* Right Form Box */}
-        <div className="bg-blue-700 text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+        <div className="bg-[#9e6e2ae5] text-white p-6 sm:p-8 rounded-lg w-full max-w-full sm:max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+
           <h2 className="text-2xl font-bold text-center mb-4">
             Let’s Find Your Dream Home!
           </h2>
@@ -137,7 +147,7 @@ const [current, setCurrent] = useState(0);
             </div>
             <button
               type="submit"
-              className="w-full bg-white text-blue-700 font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
+              className="w-full bg-white text-[#7A5520] font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
             >
               Reserve Your Spot
             </button>
@@ -146,19 +156,54 @@ const [current, setCurrent] = useState(0);
       </div>
 
       {/* table  */}
+
+      
+      {/* banner and about */}
+
+      <div className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
+        {/* Half circle background effect */}
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#A3743D] rounded-full opacity-60 z-0"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src="/img/Trac-ishca/g3.webp"
+              alt="Puri The Aravallis"
+              className="rounded-xl shadow-lg"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2 text-white">
+              About Project
+            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Four-side Open Residences
+
+            </h2>
+            <p className="text-white text-base leading-relaxed">
+             At TARC Ishva, experience a blend of luxurious and harmonious lifestyle that celebrates the essence of your aspirations. Inspired by the four directions, TARC Ishva embodies the nurturing spirit of the south, the potential of new beginnings from the east, the realm of dreams in the west and the ambition to achieve in the north. Embrace a home inspired by India, where the openness elevates wisdom, balance and peaceful living.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
       <div className="w-full px-4 py-12 lg:px-32 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
-            <span className="text-blue-700">
-              Puri The Aravallis Size And Price
+            <span className="text-[#A3743D]">
+              TARC Ishva - Sector - 63A, Gurugram
             </span>
           </h2>
 
           <div className="overflow-x-auto rounded-xl shadow-lg">
             <table className="min-w-full border border-gray-200">
               <thead>
-                <tr className="bg-blue-700 text-white text-left text-sm md:text-base">
+                <tr className="bg-[#A3743D] text-white text-left text-sm md:text-base">
                   <th className="py-4 px-6">UNIT TYPE</th>
                   <th className="py-4 px-6">UNIT SIZE</th>
                   <th className="py-4 px-6">UNIT PRICE</th>
@@ -187,49 +232,12 @@ const [current, setCurrent] = useState(0);
         </div>
       </div>
 
-      {/* banner and about */}
-
-      <section className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
-        {/* Half circle background effect */}
-        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#29b6f6] rounded-full opacity-60 z-0"></div>
-
-        <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
-          {/* Image */}
-          <div className="w-full lg:w-1/2">
-            <img
-              src="/img/background2.jpg"
-              alt="Puri The Aravallis"
-              className="rounded-xl shadow-lg"
-            />
-          </div>
-
-          {/* Content */}
-          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#66ccff] to-[#0077e6] text-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-semibold mb-2 text-black">
-              About Project
-            </h3>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              Puri The Aravallis
-            </h2>
-            <p className="text-white text-base leading-relaxed">
-              The Aravallis is an upcoming luxury residential project by Puri
-              Group. The location of this project is Sector 61 Gurgaon, which is
-              the prime location of Gurgaon. Because this project is Golf Course
-              Extension Road Project, most of the commercial and luxurious
-              projects are on the Golf Course Extension Road. This location has
-              many advantages because it has smooth and seamless connectivity to
-              all the major hubs like Dwarka Expressway, Udyog Vihar, Ambience
-              Mall, and major retail shopping centres of Gurgaon and Delhi.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      
       {/* galllry img section  */}
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
-        <h2 className="text-3xl font-bold text-black mb-2">Gallery</h2>
-        <h3 className="text-2xl text-[#0077e6] font-semibold mb-6">
-          Puri The Aravallis
+        <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
+        <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
+          Tarc Ishva
         </h3>
 
         {/* Main Image */}
@@ -250,7 +258,7 @@ const [current, setCurrent] = useState(0);
               alt={`Thumbnail ${idx + 1}`}
               onClick={() => setSelectedImage(img)}
               className={`w-24 h-16 md:w-32 md:h-20 rounded-md cursor-pointer object-cover border-2 transition-all duration-200 ${
-                selectedImage === img ? "border-blue-600" : "border-transparent"
+                selectedImage === img ? "[#A3743D]" : "border-transparent"
               }`}
             />
           ))}
@@ -262,16 +270,17 @@ const [current, setCurrent] = useState(0);
 
  <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl font-semibold text-800 mb-2">Project Facilities</h2>
-        <h3 className="text-3xl font-bold text-blue-600 mb-8">
-          Puri The Aravallis Amenities
+        <h2 className="text-2xl font-semibold text-800 mb-2 text-[#444]">Project Facilities</h2>
+        <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
+                  Tarc Ishva
+ Amenities
         </h3>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {amenities.map((item, index) => (
             <div
               key={index}
-              className="bg-white border rounded-xl p-3 shadow hover:shadow-lg transition"
+              className="bg-white  rounded-xl p-3 shadow hover:shadow-lg transition"
             >
               <div className="overflow-hidden rounded-lg">
                 <img
@@ -296,37 +305,37 @@ const [current, setCurrent] = useState(0);
   <div className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
       {/* Text Section */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
           Location Map
         </h2>
-        <h3 className="text-blue-600 text-2xl font-bold mb-4">
-          Puri The Aravallis
+        <h3 className="text-[#A3743D] text-2xl font-bold mb-4">
+        Tarc Ishva
         </h3>
         <hr className="border-gray-300 mb-6" />
 
         <ul className="space-y-4 text-lg text-gray-800">
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-blue-500 mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1" />
             1 Km From Golf Course Road
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-blue-500 mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1" />
             10 Min From Sun City, Heritage, Scotish High Schools
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-blue-500 mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1" />
             15 - 20 Min From Artemis, Medanta, Max, Fortis, W Pratiksha Hospitals
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-blue-500 mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1" />
             15 Min From Shri Ram, Shiv Nadar, Shikshantar, DPS, Amity
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-blue-500 mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1" />
             10 Min From DLF Golf Club
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-blue-500 mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1" />
             1.5 Km From Metro Station (Rapid)
           </li>
         </ul>
@@ -335,7 +344,7 @@ const [current, setCurrent] = useState(0);
       {/* Image Section */}
       <div className="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
         <img
-          src="/img/background.jpg"
+          src="/img/Trac-ishca/location.png"
           alt="Location Map"
           className="w-full h-auto object-cover"
         />
@@ -365,12 +374,12 @@ const [current, setCurrent] = useState(0);
             <img
               src={floorPlans[(current - 1 + floorPlans.length) % floorPlans.length].image}
               alt="Previous Plan"
-              className="h-48 object-contain rounded"
+              className="h-48 object-contain rounded "
             />
           </div>
 
           {/* Main Slide */}
-          <div className="mx-12 z-20 w-[400px] h-[400px] relative overflow-hidden">
+          <div className="mx-12 z-20 w-[400px] h-[400px] relative overflow-hidden shadow">
             {floorPlans.map((plan, index) => (
               <img
                 key={index}
@@ -433,10 +442,10 @@ const [current, setCurrent] = useState(0);
  <div className="bg-blue-50 py-12 px-4">
       {/* Heading */}
       <div className="text-left max-w-7xl mx-auto mb-6">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-semibold text-[#444]">
           Site Map
         </h2>
-        <h3 className="text-2xl md:text-3xl font-bold text-blue-600">
+        <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
           Master Plan Of Puri The Aravallis
         </h3>
       </div>
@@ -444,7 +453,7 @@ const [current, setCurrent] = useState(0);
       {/* Image with hover effect */}
       <div className="max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
         <img
-          src="/img/background.jpg" // 🔁 Replace with actual image path
+          src="/img/Trac-ishca/masterPlan.webp" // 🔁 Replace with actual image path
           alt="Master Plan of Puri The Aravallis"
           className="w-full h-auto object-cover"
         />
