@@ -314,27 +314,33 @@ const [current, setCurrent] = useState(0);
 
         <ul className="space-y-4 text-lg text-gray-800">
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-[#A3743D] mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+
             1 Km From Golf Course Road
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-[#A3743D] mt-1" />
-            10 Min From Sun City, Heritage, Scotish High Schools
+            <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+
+            10 Min From Sun City, Heritage
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-[#A3743D] mt-1" />
-            15 - 20 Min From Artemis, Medanta, Max, Fortis, W Pratiksha Hospitals
+            <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+
+            15 - 20 Min From Artemis, Medanta, Max.
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-[#A3743D] mt-1" />
-            15 Min From Shri Ram, Shiv Nadar, Shikshantar, DPS, Amity
+            <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+
+            15 Min From Shri Ram,  Shikshantar, DPS, Amity
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-[#A3743D] mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+
             10 Min From DLF Golf Club
           </li>
           <li className="flex items-start gap-3">
-            <FaCheckCircle className="text-[#A3743D] mt-1" />
+            <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+
             1.5 Km From Metro Station (Rapid)
           </li>
         </ul>

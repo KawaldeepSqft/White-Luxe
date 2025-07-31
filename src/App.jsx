@@ -21,6 +21,7 @@ function App() {
           path="/"
           element={
             <>
+            
               <HeroSection />
               <DiscoverProperties />
               <Services />
