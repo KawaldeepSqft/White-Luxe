@@ -79,7 +79,7 @@ const [current, setCurrent] = useState(0);
 
   return (
    <section
-  className="relative w-full h-screen bg-cover bg-center overflow-hidden"
+  className="relative w-full h-screen bg-cover bg-center "
   style={{ backgroundImage: "url('/img/Trac-ishca/Main-banner.webp')" }}
 >
       <div className="absolute inset-0 " />
@@ -104,8 +104,7 @@ const [current, setCurrent] = useState(0);
         </div>
 
         {/* Right Form Box */}
-        <div className="bg-[#9e6e2ae5] text-white p-6 sm:p-8 rounded-lg w-full max-w-full sm:max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
-
+        <div className="bg-[#9e6e2ae5] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
           <h2 className="text-2xl font-bold text-center mb-4">
             Let’s Find Your Dream Home!
           </h2>
