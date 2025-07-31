@@ -335,7 +335,7 @@ const [current, setCurrent] = useState(0);
       {/* Image Section */}
       <div className="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
         <img
-          src="/public/img/background.jpg"
+          src="/img/background.jpg"
           alt="Location Map"
           className="w-full h-auto object-cover"
         />
