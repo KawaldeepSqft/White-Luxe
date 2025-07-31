@@ -1,17 +1,88 @@
-import React from "react";
-
+import React, { useState } from "react";
+import img1 from "/public/img/background.jpg";
+import img2 from "/public/img/background2.jpg";
+import img3 from "/public/img/background.jpg";
+import img4 from "/public/img/background.jpg";
+import img5 from "/public/img/background.jpg";
+import img6 from "/public/img/background.jpg";
+import img7 from "/public/img/background.jpg";
+import img8 from "/public/img/background.jpg";
+import { FaCheckCircle } from "react-icons/fa";
+import Footer from "../Footer";
+const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 const GodrejAstra = () => {
+  const units = [
+    { type: "3BHK", size: "2250 Sq.ft", price: "Price on call" },
+    { type: "4BHK", size: "2750 Sq.ft", price: "Price on call" },
+  ];
+
+
+  const amenities = [
+  { image: "/public/img/background.jpg", label: "Club House" },
+  { image: "/public/img/background.jpg", label: "Park" },
+  { image: "/public/img/background.jpg", label: "Intercom Facility" },
+  { image: "/public/img/background.jpg", label: "Swimming Pool" },
+  { image: "/public/img/background.jpg", label: "GYM" },
+  { image: "/public/img/background.jpg", label: "Community Centre" },
+  { image: "/public/img/background.jpg", label: "Security Guard" },
+  { image: "/public/img/background.jpg", label: "Maintenance Staff" },
+  { image: "/public/img/background.jpg", label: "Piped Gas" },
+  { image: "/public/img/background.jpg", label: "Visitor Parking" },
+  { image: "/public/img/background.jpg", label: "Lift" },
+  { image: "/public/img/background.jpg", label: "Kids Play Area" },
+  { image: "/public/img/background.jpg", label: "Jogging Track" },
+  { image: "/public/img/background.jpg", label: "ATMs" },
+  { image: "/public/img/background.jpg", label: "Library" },
+  { image: "/public/img/background.jpg", label: "Conference Room" },
+  { image: "/public/img/background.jpg", label: "Cafeteria/Food Court" },
+  { image: "/public/img/background.jpg", label: "Waste Disposal" },
+];
+
+const floorPlans = [
+  {
+    label: "3 BHK Floor Plan",
+    image: "/public/img/background1.jpg",
+  },
+  {
+    label: "4 BHK Floor Plan",
+    image: "/public/img/background.jpg",
+  },
+  {
+    label: "5 BHK Floor Plan",
+    image: "/public/img/DLF-Privana.jpg",
+  },
+];
+
+
+const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % floorPlans.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + floorPlans.length) % floorPlans.length);
+  };
+
+
+  
+  const [selectedImage, setSelectedImage] = useState(images[0]);
+
   return (
-    <>
-    <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url('./img/background.jpg')" }}>
-      <div className="absolute inset-0  bg-opacity-50" />
+    <section
+      className="relative w-full h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('/img/background2.jpg')" }}
+    >
+      <div className="absolute inset-0 " />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col md:flex-row items-start justify-between h-full px-6 md:px-20 py-10 md:py-20">
         {/* Left Text Info */}
         <div className="text-white max-w-xl">
           <h4 className="text-xl font-semibold mb-2">GURGAON</h4>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">M3M Capital By M3M India</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            M3M Capital By M3M India
+          </h1>
           <p className="text-lg mb-1">Luxury Apartment</p>
           <p className="text-lg mb-4">Sector 113, Gurgaon</p>
 
@@ -25,9 +96,12 @@ const GodrejAstra = () => {
 
         {/* Right Form Box */}
         <div className="bg-blue-700 text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
-          <h2 className="text-2xl font-bold text-center mb-4">Let’s Find Your Dream Home!</h2>
+          <h2 className="text-2xl font-bold text-center mb-4">
+            Let’s Find Your Dream Home!
+          </h2>
           <p className="text-center text-sm mb-6">
-            Please fill out the form below, our expert will get back to you soon.
+            Please fill out the form below, our expert will get back to you
+            soon.
           </p>
 
           <form className="space-y-4">
@@ -70,84 +144,296 @@ const GodrejAstra = () => {
           </form>
         </div>
       </div>
-    </section>
 
+      {/* table  */}
+      <div className="w-full px-4 py-12 lg:px-32 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            How Much <br />
+            <span className="text-blue-700">
+              Puri The Aravallis Size And Price
+            </span>
+          </h2>
 
-    <div className="w-full bg-white py-10 px-4 md:px-20">
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-8 gap-x-4 text-center text-gray-700">
-    {/* Total Land */}
-    <div className="flex flex-col items-center">
-      <img src="/icons/land.png" alt="Land Icon" className="w-6 h-6 mb-2" />
-      <p className="text-sm">Total Land</p>
-      <p className="font-bold text-blue-900">12 Acres</p>
-    </div>
+          <div className="overflow-x-auto rounded-xl shadow-lg">
+            <table className="min-w-full border border-gray-200">
+              <thead>
+                <tr className="bg-blue-700 text-white text-left text-sm md:text-base">
+                  <th className="py-4 px-6">UNIT TYPE</th>
+                  <th className="py-4 px-6">UNIT SIZE</th>
+                  <th className="py-4 px-6">UNIT PRICE</th>
+                </tr>
+              </thead>
+              <tbody>
+                {units.map((unit, index) => (
+                  <tr
+                    key={index}
+                    className="border-t border-gray-200 hover:bg-blue-50 transition"
+                  >
+                    <td className="py-4 px-6 text-sm md:text-base font-medium">
+                      {unit.type}
+                    </td>
+                    <td className="py-4 px-6 text-sm md:text-base">
+                      {unit.size}
+                    </td>
+                    <td className="py-4 px-6 text-sm md:text-base">
+                      {unit.price}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 
-    {/* Total Tower */}
-    <div className="flex flex-col items-center border-l border-gray-300">
-      <img src="/icons/tower.png" alt="Tower Icon" className="w-6 h-6 mb-2" />
-      <p className="text-sm">Total Tower</p>
-      <p className="font-bold text-blue-900">12 Acres</p>
-    </div>
+      {/* banner and about */}
 
-    {/* Total Units */}
-    <div className="flex flex-col items-center border-l border-gray-300">
-      <img src="/icons/units.png" alt="Units Icon" className="w-6 h-6 mb-2" />
-      <p className="text-sm">Total Units</p>
-      <p className="font-bold text-blue-900">1212</p>
-    </div>
+      <section className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
+        {/* Half circle background effect */}
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#29b6f6] rounded-full opacity-60 z-0"></div>
 
-    {/* Payment Plan */}
-    <div className="flex flex-col items-center border-l border-gray-300">
-      <img src="/icons/plan.png" alt="Plan Icon" className="w-6 h-6 mb-2" />
-      <p className="text-sm">Payment Plan</p>
-      <p className="font-bold text-blue-900">23</p>
-    </div>
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src="/img/background2.jpg"
+              alt="Puri The Aravallis"
+              className="rounded-xl shadow-lg"
+            />
+          </div>
 
-    {/* Price */}
-    <div className="flex flex-col items-center border-l border-gray-300">
-      <img src="/icons/price.png" alt="Price Icon" className="w-6 h-6 mb-2" />
-      <p className="text-sm">Price</p>
-      <p className="font-bold text-blue-900">₹123 Cr - ₹123 Cr</p>
-    </div>
+          {/* Content */}
+          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#66ccff] to-[#0077e6] text-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-semibold mb-2 text-black">
+              About Project
+            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              Puri The Aravallis
+            </h2>
+            <p className="text-white text-base leading-relaxed">
+              The Aravallis is an upcoming luxury residential project by Puri
+              Group. The location of this project is Sector 61 Gurgaon, which is
+              the prime location of Gurgaon. Because this project is Golf Course
+              Extension Road Project, most of the commercial and luxurious
+              projects are on the Golf Course Extension Road. This location has
+              many advantages because it has smooth and seamless connectivity to
+              all the major hubs like Dwarka Expressway, Udyog Vihar, Ambience
+              Mall, and major retail shopping centres of Gurgaon and Delhi.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    {/* Status */}
-    <div className="flex flex-col items-center border-l border-gray-300">
-      <img src="/icons/status.png" alt="Status Icon" className="w-6 h-6 mb-2" />
-      <p className="text-sm">Status</p>
-      <p className="font-bold text-blue-900">Under Construction</p>
-    </div>
-  </div>
-    </div>
+      {/* galllry img section  */}
+      <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
+        <h2 className="text-3xl font-bold text-black mb-2">Gallery</h2>
+        <h3 className="text-2xl text-[#0077e6] font-semibold mb-6">
+          Puri The Aravallis
+        </h3>
 
-
-  <section className="bg-gradient-to-r from-cyan-300 to-blue-600 py-16 px-4 md:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        {/* Image */}
-        <div className="w-full md:w-1/2">
+        {/* Main Image */}
+        <div className="w-full mx-auto mb-6">
           <img
-            src='./img/background.jpg'
-            alt="M3M Crown"
-            className="rounded-2xl shadow-lg"
+            src={selectedImage}
+            alt="Selected View"
+            className="w-full h-[500px] rounded-lg shadow-xl object-cover"
           />
         </div>
 
-        {/* Content */}
-        <div className="w-full md:w-1/2 text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">M3M Crown</h2>
-          <p className="text-base md:text-lg leading-relaxed">
-            M3M Crown is an ultra-luxury residential development strategically located
-            on Dwarka Expressway, offering an unmatched blend of elegance, exclusivity,
-            and modern lifestyle. These upscale residences are designed for those who
-            appreciate the finer things in life. Residents enjoy access to a magnificent
-            clubhouse featuring world-class amenities, curated to enhance every aspect
-            of luxurious living. From wellness and recreation to entertainment and
-            community, every detail at M3M Crown is crafted for refined urban living.
-          </p>
+        {/* Thumbnail Images */}
+        <div className="flex flex-wrap gap-4 justify-center">
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`Thumbnail ${idx + 1}`}
+              onClick={() => setSelectedImage(img)}
+              className={`w-24 h-16 md:w-32 md:h-20 rounded-md cursor-pointer object-cover border-2 transition-all duration-200 ${
+                selectedImage === img ? "border-blue-600" : "border-transparent"
+              }`}
+            />
+          ))}
+        </div>
+      </section>
+
+        
+      {/* amanities */}
+
+ <section className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-2xl font-semibold text-800 mb-2">Project Facilities</h2>
+        <h3 className="text-3xl font-bold text-blue-600 mb-8">
+          Puri The Aravallis Amenities
+        </h3>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {amenities.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white border rounded-xl p-3 shadow hover:shadow-lg transition"
+            >
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={item.image}
+                  alt={item.label}
+                  className="w-full h-28 object-cover rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <p className="text-center mt-2 font-medium text-gray-700 text-sm">
+                {item.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
-    </>
-    
+
+
+
+    {/* location advanges */}
+
+  <div className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center">
+      {/* Text Section */}
+      <div>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          Location Map
+        </h2>
+        <h3 className="text-blue-600 text-2xl font-bold mb-4">
+          Puri The Aravallis
+        </h3>
+        <hr className="border-gray-300 mb-6" />
+
+        <ul className="space-y-4 text-lg text-gray-800">
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-500 mt-1" />
+            1 Km From Golf Course Road
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-500 mt-1" />
+            10 Min From Sun City, Heritage, Scotish High Schools
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-500 mt-1" />
+            15 - 20 Min From Artemis, Medanta, Max, Fortis, W Pratiksha Hospitals
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-500 mt-1" />
+            15 Min From Shri Ram, Shiv Nadar, Shikshantar, DPS, Amity
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-500 mt-1" />
+            10 Min From DLF Golf Club
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-500 mt-1" />
+            1.5 Km From Metro Station (Rapid)
+          </li>
+        </ul>
+      </div>
+
+      {/* Image Section */}
+      <div className="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+        <img
+          src="/public/img/background.jpg"
+          alt="Location Map"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+
+
+{/* floor plan  */}
+
+  <section className="bg-white py-12 px-4 lg:px-32 text-center">
+  <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
+    FLOOR PLANS
+    <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
+  </h2>
+
+  <div className="relative flex items-center justify-center max-w-6xl mx-auto">
+    {/* Left Button */}
+    <button
+      onClick={prevSlide}
+      className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+    >
+      ❮
+    </button>
+
+    {/* Previous Preview Image */}
+    <div className="hidden md:block absolute left-20 opacity-40 scale-90 blur-sm z-10">
+      <img
+        src={floorPlans[(current - 1 + floorPlans.length) % floorPlans.length].image}
+        alt="Previous Plan"
+        className="h-48 object-contain rounded"
+      />
+    </div>
+
+    {/* Main Slide */}
+   <div className="mx-12 z-20 w-[400px] h-[400px] relative overflow-hidden">
+  {floorPlans.map((plan, index) => (
+    <img
+      key={index}
+      src={plan.image}
+      alt={plan.label}
+      className={`
+        absolute top-0 left-0 w-full h-full object-contain rounded-md shadow-md transition-all duration-500 ease-in-out
+        ${index === current ? 'opacity-100 translate-x-0 z-10' : 'opacity-0 translate-x-5 z-0'}
+      `}
+    />
+  ))}
+
+  <div className="mt-4 text-[#1f1f1f] font-medium text-sm uppercase tracking-widest bg-white px-4 py-1 inline-block shadow relative z-20">
+    {floorPlans[current].label}
+  </div>
+</div>
+
+    {/* Next Preview Image */}
+    <div className="hidden md:block absolute right-20 opacity-40 scale-90 blur-sm z-10">
+      <img
+        src={floorPlans[(current + 1) % floorPlans.length].image}
+        alt="Next Plan"
+        className="h-48 object-contain rounded"
+      />
+    </div>
+
+    {/* Right Button */}
+    <button
+      onClick={nextSlide}
+      className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+    >
+      ❯
+    </button>
+  </div>
+</section>
+
+
+    {/* site map */}
+
+ <div className="bg-blue-50 py-12 px-4">
+      {/* Heading */}
+      <div className="text-left max-w-7xl mx-auto mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+          Site Map
+        </h2>
+        <h3 className="text-2xl md:text-3xl font-bold text-blue-600">
+          Master Plan Of Puri The Aravallis
+        </h3>
+      </div>
+
+      {/* Image with hover effect */}
+      <div className="max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        <img
+          src="/public/img/background.jpg" // 🔁 Replace with actual image path
+          alt="Master Plan of Puri The Aravallis"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+
+      <Footer />
+
+    </section>
   );
 };
 

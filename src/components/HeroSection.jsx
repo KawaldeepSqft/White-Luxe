@@ -7,7 +7,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full min-h-screen flex items-start md:items-center justify-center px-4 md:px-1 pt-16 md:pt-0">
-
       {/* Background with dark overlay */}
       <div
         className="absolute inset-0 z-0"
@@ -38,40 +37,37 @@ const HeroSection = () => {
         </p>
 
         {/* ===== Mobile Layout (Buttons on Top) ===== */}
-      {/* ===== Mobile Layout (Visible on small screens only) ===== */}
-<div className="mt-10 flex flex-col items-center gap-4 w-full md:hidden">
-  {/* Category Buttons */}
-  <div className="flex flex-wrap justify-center gap-2">
-    {categories.map((cat) => (
-      <button
-        key={cat}
-        onClick={() => setActive(cat)}
-        className={`px-4 py-2 rounded-full text-sm font-medium ${
-          active === cat
-            ? "bg-blue-500 text-white"
-            : "bg-white text-blue-600"
-        }`}
-      >
-        {cat}
-      </button>
-    ))}
-  </div>
+        {/* ===== Mobile Layout (Visible on small screens only) ===== */}
+        <div className="mt-10 flex flex-col items-center gap-4 w-full md:hidden">
+          {/* Category Buttons */}
+          <div className="flex flex-wrap justify-center gap-2">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActive(cat)}
+                className={`px-4 py-2 rounded-full text-sm font-medium ${
+                  active === cat
+                    ? "bg-blue-500 text-white"
+                    : "bg-white text-blue-600"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
 
-  {/* Input + Button */}
-<div className="flex w-full max-w-[100%] sm:max-w-sm gap-2 px-1">
-
-
-    <input
-      type="text"
-      placeholder="Enter a keyword"
-      className="flex-1 px-4 py-3 bg-white rounded-full text-gray-800 text-sm outline-none shadow"
-    />
-    <button className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 text-sm font-semibold rounded-full">
-      Search
-    </button>
-  </div>
-</div>
-
+          {/* Input + Button */}
+          <div className="flex w-full max-w-[100%] sm:max-w-sm gap-2 px-1">
+            <input
+              type="text"
+              placeholder="Enter a keyword"
+              className="flex-1 px-4 py-3 bg-white rounded-full text-gray-800 text-sm outline-none shadow"
+            />
+            <button className="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 text-sm font-semibold rounded-full">
+              Search
+            </button>
+          </div>
+        </div>
 
         {/* ===== Desktop Layout (Dropdown Search) ===== */}
         <div className="hidden md:flex justify-center mt-12">
@@ -90,11 +86,11 @@ const HeroSection = () => {
             </select>
 
             {/* Input */}
-           <input
-  type="text"
-  placeholder="Enter a keyword"
-  className="flex-1 px-4 py-3 rounded-full text-gray-700 text-sm outline-none"
-/>
+            <input
+              type="text"
+              placeholder="Enter a keyword"
+              className="flex-1 px-4 py-3 rounded-full text-gray-700 text-sm outline-none"
+            />
 
             {/* Button */}
             <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-base md:text-lg font-semibold rounded-r-full">
@@ -108,8 +104,6 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
 
 // import React, { useState } from "react";
 // import "./HeroSection.css";
@@ -190,4 +184,3 @@ export default HeroSection;
 // };
 
 // export default HeroSection;
-
