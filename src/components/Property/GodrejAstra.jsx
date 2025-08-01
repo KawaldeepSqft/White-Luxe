@@ -46,34 +46,34 @@ const GodrejAstra = () => {
     {
       icon: <FaRupeeSign size={24} />,
       title: "Price",
-      value: "5.18 Cr - 6.33 Cr",
+      value: " 6.33 Cr",
     },
     {
       icon: <FaRupeeSign size={24} />,
       title: "Status",
-      value: "Under Construction",
+      value: "Construction",
     },
   ];
 
   const amenities = [
-    { image: "/img/background.jpg", label: "Club House" },
-    { image: "/img/background.jpg", label: "Park" },
-    { image: "/img/background.jpg", label: "Intercom Facility" },
-    { image: "/img/background.jpg", label: "Swimming Pool" },
-    { image: "/img/background.jpg", label: "GYM" },
-    { image: "/img/background.jpg", label: "Community Centre" },
-    { image: "/img/background.jpg", label: "Security Guard" },
-    { image: "/img/background.jpg", label: "Maintenance Staff" },
-    { image: "/img/background.jpg", label: "Piped Gas" },
-    { image: "/img/background.jpg", label: "Visitor Parking" },
-    { image: "/img/background.jpg", label: "Lift" },
-    { image: "/img/background.jpg", label: "Kids Play Area" },
-    { image: "/img/background.jpg", label: "Jogging Track" },
-    { image: "/img/background.jpg", label: "ATMs" },
-    { image: "/img/background.jpg", label: "Library" },
-    { image: "/img/background.jpg", label: "Conference Room" },
-    { image: "/img/background.jpg", label: "Cafeteria/Food Court" },
-    { image: "/img/background.jpg", label: "Waste Disposal" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Club_house.jpeg", label: "Club House" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/park.jpeg", label: "Park" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg", label: "Intercom Facility" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg", label: "Swimming Pool" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg", label: "GYM" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg", label: "Community Centre" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Security_guard.jpeg", label: "Security Guard" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg", label: "Maintenance Staff" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg", label: "Piped Gas" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Visitor_parking.jpeg", label: "Visitor Parking" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Lift.jpeg", label: "Lift" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Kids_playarea.jpeg", label: "Kids Play Area" },
+    { image: "http://propertydekho247.com/img/FreshAmenities/jogging_track.jpeg", label: "Jogging Track" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg", label: "ATMs" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg", label: "Library" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg", label: "Conference Room" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/CafeteriaFoodCourt.jpeg", label: "Cafeteria/Food Court" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Waste_disposal.png", label: "Waste Disposal" },
   ];
 
   const floorPlans = [
@@ -108,101 +108,113 @@ const GodrejAstra = () => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
-   <section
-  className="relative w-full h-screen bg-cover bg-center"
-  style={{ backgroundImage: "url('/img/Trac-ishca/Main-banner.webp')" }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0" />
+    <section
+      className="relative w-full h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('/img/Trac-ishca/Main-banner.webp')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0" />
 
-  {/* Main Content */}
-  <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 py-10 md:py-20">
-    {/* Top Content */}
-    <div className="flex flex-col md:flex-row items-start justify-between">
-      {/* Left Text Info */}
-      <div className="text-white max-w-xl">
-        <h4 className="text-xl font-semibold mb-2">GURGAON</h4>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Tarc Ishva</h1>
-        <p className="text-lg mb-1">Luxury Apartment</p>
-        <p className="text-lg mb-4">Sector - 63A, Gurugram</p>
+      {/* Main Content */}
+      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-24 pb-10 md:py-20">
+        {/* Top Content */}
+        <div className="flex flex-col md:flex-row items-start justify-between">
+          {/* Left Text Info */}
+          <div className="text-white max-w-xl">
+            <h4 className="text-2xl font-semibold mb-2">GURGAON</h4>
+            <h1 className="text-5xl md:text-5xl font-bold mb-4">Tarc Ishva</h1>
+            <p className="text-xl font-bold mb-1">Luxury Apartment</p>
+            <p className="text-xl  font-bold mb-4">Sector - 63A, Gurugram</p>
 
-        <div className="flex items-center">
-          <span className="text-xl font-semibold">Starting Price</span>
-          <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
-            ₹ 9.7 Cr*
-          </span>
+            <div className="flex items-center">
+              <span className="text-xl font-semibold">Starting Price</span>
+              <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
+                ₹ 9.7 Cr*
+              </span>
+            </div>
+          </div>
+
+          {/* Right Form Box */}
+          <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+            <h2 className="text-2xl font-bold text-center mb-4">
+              Let’s Find Your Dream Home!
+            </h2>
+            <p className="text-center text-sm mb-6">
+              Please fill out the form below, our expert will get back to you
+              soon.
+            </p>
+
+            <form className="space-y-4">
+              <div className="relative">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                  <i className="fas fa-user" />
+                </span>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                />
+              </div>
+              <div className="relative">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                  <i className="fas fa-envelope" />
+                </span>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                />
+              </div>
+              <div className="relative">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                  <i className="fas fa-phone" />
+                </span>
+                <input
+                  type="tel"
+                  placeholder="Your Number"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-white text-[#7A5520] font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
+              >
+                Reserve Your Spot
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Bottom Info Boxes (Center Aligned) */}
+        {/* Bottom Info Boxes (Hidden on Mobile, Visible on md and above) */}
+        <div className="hidden md:flex bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg flex-wrap justify-center items-center px-4 md:px-10 py-6 mt-6 md:mt-18 gap-6">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center min-w-[120px] px-4"
+            >
+              <div className="text-white mb-1">{item.icon}</div>
+              <div className="text-sm text-white/80">{item.title}</div>
+              <div className="font-semibold text-white mt-1">{item.value}</div>
+            </div>
+          ))}
         </div>
       </div>
-
-      {/* Right Form Box */}
-      <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
-        <h2 className="text-2xl font-bold text-center mb-4">
-          Let’s Find Your Dream Home!
-        </h2>
-        <p className="text-center text-sm mb-6">
-          Please fill out the form below, our expert will get back to you soon.
-        </p>
-
-        <form className="space-y-4">
-          <div className="relative">
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
-              <i className="fas fa-user" />
-            </span>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
-            />
-          </div>
-          <div className="relative">
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
-              <i className="fas fa-envelope" />
-            </span>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
-            />
-          </div>
-          <div className="relative">
-            <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
-              <i className="fas fa-phone" />
-            </span>
-            <input
-              type="tel"
-              placeholder="Your Number"
-              className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-white text-[#7A5520] font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
+      {/* Mobile Only Info Box Section (visible <600px) */}
+      <div className="md:hidden bg-white border-[#fff] rounded-xl shadow-lg flex flex-wrap justify-center items-center px-4 py-6 mt-6 gap-6">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center min-w-[120px] px-4"
           >
-            Reserve Your Spot
-          </button>
-        </form>
+            <div className="text-black mb-1 text-2xl flex items-center justify-center h-10 w-10">
+              {item.icon}
+            </div>
+            <div className="text-sm text-gray-700">{item.title}</div>
+            <div className="font-semibold text-black mt-1">{item.value}</div>
+          </div>
+        ))}
       </div>
-    </div>
-
-    {/* Bottom Info Boxes (Center Aligned) */}
-   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg flex flex-wrap justify-center items-center px-4 md:px-10 py-6 mt-6 md:mt-18 gap-6">
-  {data.map((item, index) => (
-    <div
-      key={index}
-      className="flex flex-col items-center text-center min-w-[120px] px-4"
-    >
-      <div className="text-white mb-1">{item.icon}</div>
-      <div className="text-sm text-white/80">{item.title}</div>
-      <div className="font-semibold text-white mt-1">{item.value}</div>
-    </div>
-  ))}
-</div>
-
-
-  </div>
-
-
-
 
       {/* table  */}
 

@@ -67,6 +67,19 @@ const HeroSection = () => {
               Search
             </button>
           </div>
+
+          <div className="mt-6 flex flex-col items-center gap-3 text-white text-sm px-4 text-center">
+  <div>
+    <p>✔ Need help choosing the right property?</p>
+    <p>✔ Personalized Property Assistance</p>
+    <p>✔ Prime Gurugram Locations</p>
+  </div>
+  <button className="mt-2 bg-white text-[#A3743D] font-semibold px-5 py-2 rounded-full shadow-md">
+    Get Free Consultation
+  </button>
+</div>
+
+          
         </div>
 
         {/* ===== Desktop Layout (Dropdown Search) ===== */}
