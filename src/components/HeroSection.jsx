@@ -8,6 +8,7 @@ const projects = [
   { name: "Godrej Astra", path: "/properties/Godrej-Astra" },
   { name: "Tulip Monsella", path: "/properties/Tulip-Monsella" },
   { name: "Aipl Autograph", path: "/properties/Aipl-Autograph" },
+  { name: "DLF Privana North", path: "/properties/DLF-Privana-North" },
 ];
 
 const HeroSection = () => {

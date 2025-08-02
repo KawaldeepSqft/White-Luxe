@@ -26,12 +26,12 @@ const properties = [
     image: '/img/AiplAutograp/b1.jpg',
     path: 'properties/Aipl-Autograph',
   },
-  // {
-  //   name: 'Godrej Astra',
-  //   location: 'Sector 54, Golf Course Road, Gurgaon',
-  //   image: '/img/Godrej-Astra/Hero.webp',
-  //   path: '/properties/Godrej-Astra',
-  // },
+  {
+    name: 'DLF Privana North',
+    location: 'Sector 77, Southern Peripheral Road, Gurugram',
+    image: '/img/DlfPrivena/Banner.jpg',
+    path: '/properties/DLF-Privana-North',
+  },
   // {
   //   name: 'Tulip Monsella',
   //   location: 'GOLF COURSE ROAD, GURUGRAM',
