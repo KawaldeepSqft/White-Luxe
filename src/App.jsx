@@ -10,7 +10,10 @@ import FAQSection from './components/FAQSection';
 import HeroSection from './components/HeroSection';
 import DiscoverProperties from './components/DiscoverProperties';
 import Clients from './components/Clients';
+import TarcIshva from './components/Property/TarcIshva';
 import GodrejAstra from './components/Property/GodrejAstra';
+import TulipMonsella from './components/Property/TulipMonsella';
+import AiplAutograph from './components/Property/AiplAutograph';
 
 function App() {
   return (
@@ -32,7 +35,11 @@ function App() {
             </>
           }
         />
-        <Route path="/properties/godrej-astra" element= {<GodrejAstra/>} />
+       
+        <Route path="/properties/Tarc-Ishva" element= {<TarcIshva/>} />
+       <Route path="/properties/Godrej-Astra" element= {<GodrejAstra/>} />
+       <Route path="/properties/Tulip-Monsella" element= {<TulipMonsella/>}/>
+       <Route path="/properties/Aipl-Autograph" element= {<AiplAutograph/>}/>
       </Routes>
       <Footer />
     </Router>

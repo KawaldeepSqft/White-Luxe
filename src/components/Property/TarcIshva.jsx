@@ -4,44 +4,44 @@ import { MdApartment } from "react-icons/md";
 import { RiBuilding2Line } from "react-icons/ri";
 import { TbRulerMeasure } from "react-icons/tb";
 
-import img1 from "/img/Godrej-Astra/g1.png"
-import img2 from "/img/Godrej-Astra/g2.webp"
-import img3 from "/img/Godrej-Astra/g3.webp"
-import img4 from "/img/Godrej-Astra/g5.webp"
-import img5 from "/img/Godrej-Astra/g7.jpg"
-// import img6 from "/img/Godrej-Astra/h1.png"
-// import img7 from "/img/Godrej-Astra/h1.png"
-// import img8 from "/img/Godrej-Astra/h1.png"
+import img1 from "/img/Trac-ishca/g1.jpg";
+import img2 from "/img/Trac-ishca/g2.webp";
+import img3 from "/img/Trac-ishca/g3.webp";
+import img4 from "/img/Trac-ishca/g4.jpg";
+import img5 from "/img/Trac-ishca/g6.jpg";
+import img6 from "/img/Trac-ishca/g7.jpg";
+import img7 from "/img/background.jpg";
+import img8 from "/img/background.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
-const images = [img1, img2, img3, img4, img5,];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
-const GodrejAstra = () => {
+const TarcIshva = () => {
   const units = [
-    { type: "3 BHK + SR", size: "2970 - 3182 SQ.FT", price: "Price on call" },
-    { type: "4 BHK + SR", size: "3994 - 4092 SQ.FT", price: "Price on call" },
+    // { type: "3BHK", size: "2250 Sq.ft", price: "Price on call" },
+    { type: "4 BHK", size: "Size on call", price: "Price on call" },
   ];
 
   const data = [
     {
       icon: <TbRulerMeasure size={24} />,
       title: "Total Land",
-      value: "2.7 Acres",
+      value: "10.5 Acres",
     },
     {
       icon: <RiBuilding2Line size={24} />,
       title: "Total Tower",
-      value: "2",
+      value: "1",
     },
     {
       icon: <MdApartment size={24} />,
       title: "Total Units",
-      value: "151",
+      value: "150",
     },
     {
       icon: <FaBuilding size={24} />,
       title: "Payment Plan",
-      value: "25:25:25:25",
+      value: "Flexible",
     },
     {
       icon: <FaRupeeSign size={24} />,
@@ -51,103 +51,36 @@ const GodrejAstra = () => {
     {
       icon: <FaRupeeSign size={24} />,
       title: "Status",
-      value: "Under Construction",
+      value: "Construction",
     },
   ];
 
   const amenities = [
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg",
-      label: "Library",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg",
-      label: "Intercom Facility",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Security_guard.jpeg",
-      label: "Security Guard",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg",
-      label: "Swimming Pool",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg",
-      label: "Community Centre",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Visitor_parking.jpeg",
-      label: "Visitor Parking",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg",
-      label: "Piped Gas",
-    },
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg",
-      label: "GYM",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Waste_disposal.png",
-      label: "Waste Disposal",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/CafeteriaFoodCourt.jpeg",
-      label: "Cafeteria/Food Court",
-    },
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/park.jpeg",
-      label: "Park",
-    },
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/Lift.jpeg",
-      label: "Lift",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg",
-      label: "Maintenance Staff",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Kids_playarea.jpeg",
-      label: "Kids Play Area",
-    },
-    {
-      image:
-        "http://propertydekho247.com/img/FreshAmenities/jogging_track.jpeg",
-      label: "Jogging Track",
-    },
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg",
-      label: "ATMs",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg",
-      label: "Conference Room",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Club_house.jpeg",
-      label: "Club House",
-    },
-  ];
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg", label: "Library" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg", label: "Intercom Facility" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Security_guard.jpeg", label: "Security Guard" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg", label: "Swimming Pool" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg", label: "Community Centre" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Visitor_parking.jpeg", label: "Visitor Parking" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg", label: "Piped Gas" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg", label: "GYM" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Waste_disposal.png", label: "Waste Disposal" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/CafeteriaFoodCourt.jpeg", label: "Cafeteria/Food Court" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/park.jpeg", label: "Park" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Lift.jpeg", label: "Lift" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg", label: "Maintenance Staff" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Kids_playarea.jpeg", label: "Kids Play Area" },
+    { image: "http://propertydekho247.com/img/FreshAmenities/jogging_track.jpeg", label: "Jogging Track" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg", label: "ATMs" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg", label: "Conference Room" },
+    { image: "https://www.propertydekho247.com/img/FreshAmenities/Club_house.jpeg", label: "Club House" },
+  ]
 
   const floorPlans = [
-    {
-      label: "3 BHK Floor Plan",
-      image: "/img/Trac-ishca/f1.webp",
-    },
+    // {
+    //   label: "3 BHK Floor Plan",ha
+    //   image: "/img/background1.jpg",
+    // },
     {
       label: "4 BHK Floor Plan",
       image: "/img/Trac-ishca/f1.webp",
@@ -177,7 +110,7 @@ const GodrejAstra = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/img/Godrej-Astra/Hero.webp')" }}
+      style={{ backgroundImage: "url('/img/Trac-ishca/Main-banner.webp')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0" />
@@ -189,18 +122,14 @@ const GodrejAstra = () => {
           {/* Left Text Info */}
           <div className="text-white max-w-xl">
             <h4 className="text-2xl font-semibold mb-2">GURGAON</h4>
-            <h1 className="text-5xl md:text-5xl font-bold mb-4">
-              Godrej Astra
-            </h1>
+            <h1 className="text-5xl md:text-5xl font-bold mb-4">Tarc Ishva</h1>
             <p className="text-xl font-bold mb-1">Luxury Apartment</p>
-            <p className="text-xl  font-bold mb-4">
-              Sector 54, Golf Course Road, Gurugram
-            </p>
+            <p className="text-xl  font-bold mb-4">Sector - 63A, Gurugram</p>
 
             <div className="flex items-center">
               <span className="text-xl font-semibold">Starting Price</span>
               <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
-                ₹ 11.52 Cr*
+                ₹ 9.7 Cr*
               </span>
             </div>
           </div>
@@ -299,7 +228,7 @@ const GodrejAstra = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/img/Godrej-Astra/h1.png"
+              src="/img/Trac-ishca/g3.webp"
               alt="Puri The Aravallis"
               className="rounded-xl shadow-lg"
             />
@@ -309,16 +238,16 @@ const GodrejAstra = () => {
           <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold mb-2 text-white">About Project</h3>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              Godrej Astra
+              Four-side Open Residences
             </h2>
             <p className="text-white text-base leading-relaxed">
-              Some places are built to impress—Godrej Astra is crafted to
-              inspire. Here, life rises above the ordinary into a world where
-              every moment is intentional, elegant, and extraordinary. From your
-              exclusive private speakeasy and curated clubhouse to a fine-dine
-              restaurant and personal forest retreat, everything is designed to
-              indulge your desires and elevate your lifestyle. At Godrej Astra,
-              you don’t just live—you live beautifully.
+              At TARC Ishva, experience a blend of luxurious and harmonious
+              lifestyle that celebrates the essence of your aspirations.
+              Inspired by the four directions, TARC Ishva embodies the nurturing
+              spirit of the south, the potential of new beginnings from the
+              east, the realm of dreams in the west and the ambition to achieve
+              in the north. Embrace a home inspired by India, where the openness
+              elevates wisdom, balance and peaceful living.
             </p>
           </div>
         </div>
@@ -329,7 +258,7 @@ const GodrejAstra = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
             <span className="text-[#A3743D]">
-              Godrej Astra, Sector 54, Golf Course Road, Gurugram
+              TARC Ishva - Sector - 63A, Gurugram
             </span>
           </h2>
 
@@ -369,7 +298,7 @@ const GodrejAstra = () => {
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
         <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
         <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
-          Godrej Astra
+          Tarc Ishva
         </h3>
 
         {/* Main Image */}
@@ -405,7 +334,7 @@ const GodrejAstra = () => {
             Project Facilities
           </h2>
           <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
-            Godrej Astra Amenities
+            Tarc Ishva Amenities
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -438,33 +367,33 @@ const GodrejAstra = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
             Location Map
           </h2>
-          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">Godrej Astra</h3>
+          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">Tarc Ishva</h3>
           <hr className="border-gray-300 mb-6" />
 
           <ul className="space-y-4 text-lg text-gray-800">
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Rapid Metro - 6.1km
+              1 Km From Golf Course Road
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Marengo Asian Hospital - 2.8 km
+              10 Min From Sun City, Heritage
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Cloudnine – 1 km
+              15 - 20 Min From Artemis, Medanta, Max.
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Scottish High International – 2.7 km
+              15 Min From Shri Ram, Shikshantar, DPS, Amity
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              AIPL masterpiece - 2.9 km
+              10 Min From DLF Golf Club
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              One & Two Horizon Centre - 2.9 km
+              1.5 Km From Metro Station (Rapid)
             </li>
           </ul>
         </div>
@@ -517,8 +446,8 @@ const GodrejAstra = () => {
                 src={plan.image}
                 alt={plan.label}
                 onClick={() => setShowModal(true)}
-                className={` 
-                   blur-sm absolute top-0 left-0 w-full h-full object-contain rounded-md shadow-md cursor-zoom-in transition-all duration-500 ease-in-out
+                className={`
+                  absolute top-0 left-0 w-full h-full object-contain rounded-md shadow-md cursor-zoom-in transition-all duration-500 ease-in-out
                   ${
                     index === current
                       ? "opacity-100 translate-x-0 z-10"
@@ -567,7 +496,7 @@ const GodrejAstra = () => {
           <img
             src={floorPlans[current].image}
             alt={floorPlans[current].label}
-            className="max-w-full max-h-[90vh] rounded-lg shadow-lg blur-sm"
+            className="max-w-full max-h-[90vh] rounded-lg shadow-lg"
           />
         </div>
       )}
@@ -581,15 +510,15 @@ const GodrejAstra = () => {
             Site Map
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
-            Master Plan Of Godrej-Astra
+            Master Plan Of Puri The Aravallis
           </h3>
         </div>
 
         {/* Image with hover effect */}
         <div className="max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
           <img
-            src="/img/Godrej-Astra/master-plan.webp" // 🔁 Replace with actual image path
-            alt="Master Plan of Godrej-Astra"
+            src="/img/Trac-ishca/masterPlan.webp" // 🔁 Replace with actual image path
+            alt="Master Plan of Puri The Aravallis"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -600,4 +529,4 @@ const GodrejAstra = () => {
   );
 };
 
-export default GodrejAstra;
+export default TarcIshva;

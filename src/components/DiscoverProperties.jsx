@@ -6,20 +6,38 @@ const properties = [
     name: 'Tarc Ishva',
     location: 'Sector - 63A, Gurugram',
     image: './img/tarc-ishva.jpg',
-    path: '/properties/godrej-astra',
+    path: '/properties/Tarc-Ishva',
   },
   {
     name: 'Godrej Astra',
     location: 'Sector 54, Golf Course Road, Gurgaon',
-    image: './img/godrej-astra-popup.webp',
-    path: '/properties/godrej-astra',
+    image: '/img/Godrej-Astra/Hero.webp',
+    path: '/properties/Godrej-Astra',
   },
   {
     name: 'Tulip Monsella',
     location: 'GOLF COURSE ROAD, GURUGRAM',
     image: './img/a438f6_f40e3430b8e540948f3c7a7e59ef26c5~mv2.avif',
-    path: '/properties/godrej-astra',
+    path: '/properties/Tulip-Monsella',
   },
+  {
+    name: 'Aipl Autograph',
+    location: 'Sector 108, Gurugram',
+    image: '/img/AiplAutograp/b1.jpg',
+    path: 'properties/Aipl-Autograph',
+  },
+  // {
+  //   name: 'Godrej Astra',
+  //   location: 'Sector 54, Golf Course Road, Gurgaon',
+  //   image: '/img/Godrej-Astra/Hero.webp',
+  //   path: '/properties/Godrej-Astra',
+  // },
+  // {
+  //   name: 'Tulip Monsella',
+  //   location: 'GOLF COURSE ROAD, GURUGRAM',
+  //   image: './img/a438f6_f40e3430b8e540948f3c7a7e59ef26c5~mv2.avif',
+  //   path: '/properties/Tulip-Monsella',
+  // },
 ];
 
 const DiscoverProperties = () => {

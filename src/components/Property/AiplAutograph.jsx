@@ -4,49 +4,47 @@ import { MdApartment } from "react-icons/md";
 import { RiBuilding2Line } from "react-icons/ri";
 import { TbRulerMeasure } from "react-icons/tb";
 
-import img1 from "/img/Godrej-Astra/g1.png"
-import img2 from "/img/Godrej-Astra/g2.webp"
-import img3 from "/img/Godrej-Astra/g3.webp"
-import img4 from "/img/Godrej-Astra/g5.webp"
-import img5 from "/img/Godrej-Astra/g7.jpg"
-// import img6 from "/img/Godrej-Astra/h1.png"
+import img1 from '/img/AiplAutograp/g1.jpg';
+import img2 from '/img/AiplAutograp/g2.jpg';
+import img3 from '/img/AiplAutograp/g3.jpg';
+import img4 from '/img/AiplAutograp/g5.jpg';
+import img5 from'/img/AiplAutograp/g7.jpg';
+import img6 from '/img/AiplAutograp/g8.jpg';
 // import img7 from "/img/Godrej-Astra/h1.png"
 // import img8 from "/img/Godrej-Astra/h1.png"
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
-const images = [img1, img2, img3, img4, img5,];
+const images = [img1, img2, img3, img4, img5, img6];
 
-const GodrejAstra = () => {
+const AiplAutograph = () => {
   const units = [
-    { type: "3 BHK + SR", size: "2970 - 3182 SQ.FT", price: "Price on call" },
-    { type: "4 BHK + SR", size: "3994 - 4092 SQ.FT", price: "Price on call" },
+    { type: "Virtual Office ", size: "500 Sq.Ft*", price: "Price on call" },
+    { type: "Self Use Office", size: "4698 Sq.Ft*", price: "Price on call" },
+    { type: "Restaurants", size: "951 SQ.FT", price: "Price on call" },
+
   ];
 
   const data = [
     {
       icon: <TbRulerMeasure size={24} />,
       title: "Total Land",
-      value: "2.7 Acres",
+      value: "6.67 Acres",
     },
     {
       icon: <RiBuilding2Line size={24} />,
       title: "Total Tower",
-      value: "2",
+      value: "3",
     },
-    {
-      icon: <MdApartment size={24} />,
-      title: "Total Units",
-      value: "151",
-    },
+    
     {
       icon: <FaBuilding size={24} />,
       title: "Payment Plan",
-      value: "25:25:25:25",
+      value: "CLP",
     },
     {
       icon: <FaRupeeSign size={24} />,
       title: "Price",
-      value: " 6.33 Cr",
+      value: " 7.18 Cr",
     },
     {
       icon: <FaRupeeSign size={24} />,
@@ -56,44 +54,44 @@ const GodrejAstra = () => {
   ];
 
   const amenities = [
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg",
-      label: "Library",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg",
-      label: "Intercom Facility",
-    },
+    // {
+    //   image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg",
+    //   label: "Library",
+    // },
+    // {
+    //   image:
+    //     "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg",
+    //   label: "Intercom Facility",
+    // },
     {
       image:
         "https://www.propertydekho247.com/img/FreshAmenities/Security_guard.jpeg",
       label: "Security Guard",
     },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg",
-      label: "Swimming Pool",
-    },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg",
-      label: "Community Centre",
-    },
+    // {
+    //   image:
+    //     "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg",
+    //   label: "Swimming Pool",
+    // },
+    // {
+    //   image:
+    //     "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg",
+    //   label: "Community Centre",
+    // },
     {
       image:
         "https://www.propertydekho247.com/img/FreshAmenities/Visitor_parking.jpeg",
       label: "Visitor Parking",
     },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg",
-      label: "Piped Gas",
-    },
-    {
-      image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg",
-      label: "GYM",
-    },
+    // {
+    //   image:
+    //     "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg",
+    //   label: "Piped Gas",
+    // },
+    // {
+    //   image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg",
+    //   label: "GYM",
+    // },
     {
       image:
         "https://www.propertydekho247.com/img/FreshAmenities/Waste_disposal.png",
@@ -102,7 +100,7 @@ const GodrejAstra = () => {
     {
       image:
         "https://www.propertydekho247.com/img/FreshAmenities/CafeteriaFoodCourt.jpeg",
-      label: "Cafeteria/Food Court",
+      label: "Dining Options",
     },
     {
       image: "https://www.propertydekho247.com/img/FreshAmenities/park.jpeg",
@@ -117,16 +115,8 @@ const GodrejAstra = () => {
         "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg",
       label: "Maintenance Staff",
     },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Kids_playarea.jpeg",
-      label: "Kids Play Area",
-    },
-    {
-      image:
-        "http://propertydekho247.com/img/FreshAmenities/jogging_track.jpeg",
-      label: "Jogging Track",
-    },
+   
+   
     {
       image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg",
       label: "ATMs",
@@ -134,27 +124,27 @@ const GodrejAstra = () => {
     {
       image:
         "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg",
-      label: "Conference Room",
+      label: "Restrooms",
     },
-    {
-      image:
-        "https://www.propertydekho247.com/img/FreshAmenities/Club_house.jpeg",
-      label: "Club House",
-    },
+  
   ];
 
   const floorPlans = [
-    {
-      label: "3 BHK Floor Plan",
-      image: "/img/Trac-ishca/f1.webp",
-    },
-    {
-      label: "4 BHK Floor Plan",
-      image: "/img/Trac-ishca/f1.webp",
-    },
+    // {
+    //   label: " Floor Plan",
+    //   image: '/img/AiplAutograp/map.jpg',
+    // },
+    // {
+    //   label: "3 BHK Floor Plan",
+    //     image: "/img/TulipMonsella/3bhk2.jpeg",
+    // },
+    // {
+    //   label: "4 BHK Floor Plan",
+    //    image: "/img/TulipMonsella/4bhk.jpeg",
+    // },
     // {
     //   label: "5 BHK Floor Plan",
-    //   image: "/img/DLF-Privana.jpg",
+    //     image: "/img/TulipMonsella/5bhk.jpeg",
     // },
   ];
 
@@ -177,7 +167,7 @@ const GodrejAstra = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/img/Godrej-Astra/Hero.webp')" }}
+      style={{ backgroundImage: "url('/img/AiplAutograp/b1.jpg')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0" />
@@ -190,17 +180,18 @@ const GodrejAstra = () => {
           <div className="text-white max-w-xl">
             <h4 className="text-2xl font-semibold mb-2">GURGAON</h4>
             <h1 className="text-5xl md:text-5xl font-bold mb-4">
-              Godrej Astra
+             Aipl Autograph
             </h1>
-            <p className="text-xl font-bold mb-1">Luxury Apartment</p>
+            <p className="text-xl font-bold mb-1">Office Space &
+Restaurants (Retail)</p>
             <p className="text-xl  font-bold mb-4">
-              Sector 54, Golf Course Road, Gurugram
+            Sector 108, Gurugram
             </p>
 
             <div className="flex items-center">
               <span className="text-xl font-semibold">Starting Price</span>
               <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
-                ₹ 11.52 Cr*
+                ₹ 71 Lakhs*
               </span>
             </div>
           </div>
@@ -299,7 +290,7 @@ const GodrejAstra = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2">
             <img
-              src="/img/Godrej-Astra/h1.png"
+              src="/img/AiplAutograp/g1.jpg"
               alt="Puri The Aravallis"
               className="rounded-xl shadow-lg"
             />
@@ -309,16 +300,10 @@ const GodrejAstra = () => {
           <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold mb-2 text-white">About Project</h3>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              Godrej Astra
+              Aipl Autograph
             </h2>
             <p className="text-white text-base leading-relaxed">
-              Some places are built to impress—Godrej Astra is crafted to
-              inspire. Here, life rises above the ordinary into a world where
-              every moment is intentional, elegant, and extraordinary. From your
-              exclusive private speakeasy and curated clubhouse to a fine-dine
-              restaurant and personal forest retreat, everything is designed to
-              indulge your desires and elevate your lifestyle. At Godrej Astra,
-              you don’t just live—you live beautifully.
+            AIPL Autograph is a Grade ‘A’ office development spread over 6.13 acres, offering a modern, interactive environment for tenants and retail patrons. With unique floor plates ranging from 12,000 to 120,000 sq. ft., it maximizes workspace and views. A 15,000 sq. ft. triple-height entrance lobby sets a grand tone, while 15–24 PAX high-speed elevators with Destination Control ensure smooth movement. The iconic, energy-efficient façade features a double-glazed unitized system with stone cladding. The project includes four levels of basement parking, a dedicated drop-off area, and excellent retail visibility—making it a landmark commercial destination.
             </p>
           </div>
         </div>
@@ -329,7 +314,7 @@ const GodrejAstra = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
             <span className="text-[#A3743D]">
-              Godrej Astra, Sector 54, Golf Course Road, Gurugram
+             Aipl Autograph, Sector 54, Golf Course Road, Gurugram
             </span>
           </h2>
 
@@ -369,7 +354,7 @@ const GodrejAstra = () => {
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
         <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
         <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
-          Godrej Astra
+         Aipl Autograph
         </h3>
 
         {/* Main Image */}
@@ -405,7 +390,7 @@ const GodrejAstra = () => {
             Project Facilities
           </h2>
           <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
-            Godrej Astra Amenities
+           Aipl Autograph Amenities
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -438,41 +423,44 @@ const GodrejAstra = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
             Location Map
           </h2>
-          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">Godrej Astra</h3>
+          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">
+           Aipl Autograph
+          </h3>
           <hr className="border-gray-300 mb-6" />
 
           <ul className="space-y-4 text-lg text-gray-800">
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Rapid Metro - 6.1km
+             0.8 km. - DPS International
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Marengo Asian Hospital - 2.8 km
+    0.3 km. - St. Xavier’s School
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Cloudnine – 1 km
+            5.6 km. - Rapid Metro Sector 55-56
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              Scottish High International – 2.7 km
+             0.3 km. - Golf Course Extn. Road
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              AIPL masterpiece - 2.9 km
+      8.0 km. - Huda City Centre Metro Station
             </li>
             <li className="flex items-start gap-3">
               <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-              One & Two Horizon Centre - 2.9 km
+          25 km. - IGI Airport
             </li>
+           
           </ul>
         </div>
 
         {/* Image Section */}
         <div className="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
           <img
-            src="/img/Trac-ishca/location.png"
+            src='/img/AiplAutograp/map.webp'
             alt="Location Map"
             className="w-full h-auto object-cover"
           />
@@ -481,96 +469,8 @@ const GodrejAstra = () => {
 
       {/* floor plan  */}
 
-      <section className="bg-white py-12 px-4 lg:px-32 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
-          FLOOR PLANS
-          <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
-        </h2>
+     
 
-        <div className="relative flex items-center justify-center max-w-6xl mx-auto">
-          {/* Left Button */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
-          >
-            ❮
-          </button>
-
-          {/* Previous Preview Image */}
-          <div className="hidden md:block absolute left-20 opacity-40 scale-90 blur-sm z-10">
-            <img
-              src={
-                floorPlans[
-                  (current - 1 + floorPlans.length) % floorPlans.length
-                ].image
-              }
-              alt="Previous Plan"
-              className="h-48 object-contain rounded "
-            />
-          </div>
-
-          {/* Main Slide */}
-          <div className="mx-12 z-20 w-[400px] h-[400px] relative overflow-hidden shadow">
-            {floorPlans.map((plan, index) => (
-              <img
-                key={index}
-                src={plan.image}
-                alt={plan.label}
-                onClick={() => setShowModal(true)}
-                className={` 
-                   blur-sm absolute top-0 left-0 w-full h-full object-contain rounded-md shadow-md cursor-zoom-in transition-all duration-500 ease-in-out
-                  ${
-                    index === current
-                      ? "opacity-100 translate-x-0 z-10"
-                      : "opacity-0 translate-x-5 z-0"
-                  }
-                `}
-              />
-            ))}
-
-            <div className="mt-4 text-[#1f1f1f] font-medium text-sm uppercase tracking-widest bg-white px-4 py-1 inline-block shadow relative z-20">
-              {floorPlans[current].label}
-            </div>
-          </div>
-
-          {/* Next Preview Image */}
-          <div className="hidden md:block absolute right-20 opacity-40 scale-90 blur-sm z-10">
-            <img
-              src={floorPlans[(current + 1) % floorPlans.length].image}
-              alt="Next Plan"
-              className="h-48 object-contain rounded"
-            />
-          </div>
-
-          {/* Right Button */}
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
-          >
-            ❯
-          </button>
-        </div>
-      </section>
-
-      {/* Fullscreen Modal */}
-      {showModal && (
-        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center">
-          {/* Close Button */}
-          <button
-            onClick={() => setShowModal(false)}
-            className="absolute top-5 right-5 text-white text-4xl font-bold z-50"
-          >
-            &times;
-          </button>
-
-          {/* Fullscreen Image */}
-          <img
-            src={floorPlans[current].image}
-            alt={floorPlans[current].label}
-            className="max-w-full max-h-[90vh] rounded-lg shadow-lg blur-sm"
-          />
-        </div>
-      )}
 
       {/* site map */}
 
@@ -581,15 +481,15 @@ const GodrejAstra = () => {
             Site Map
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
-            Master Plan Of Godrej-Astra
+            Master Plan Of Aipl Autograph
           </h3>
         </div>
 
         {/* Image with hover effect */}
         <div className="max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
           <img
-            src="/img/Godrej-Astra/master-plan.webp" // 🔁 Replace with actual image path
-            alt="Master Plan of Godrej-Astra"
+            src='/img/AiplAutograp/map.jpg' // 🔁 Replace with actual image path
+            alt="Master Plan of TulipMonsella"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -600,4 +500,4 @@ const GodrejAstra = () => {
   );
 };
 
-export default GodrejAstra;
+export default AiplAutograph;
