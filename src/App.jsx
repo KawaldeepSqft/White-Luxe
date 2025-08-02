@@ -15,9 +15,25 @@ import GodrejAstra from './components/Property/GodrejAstra';
 import TulipMonsella from './components/Property/TulipMonsella';
 import AiplAutograph from './components/Property/AiplAutograph';
 import DLFPrivanaNorth from './components/Property/DLFPriveNorth';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
+    <>
+    <Helmet>
+        <title>White Luxe Real Estate - Discover Luxury Living in Gurgaon</title>
+        <meta
+          name="description"
+          content="Explore premium residential, commercial, and retail properties in Gurugram with White Luxe — your trusted real estate consultancy."
+        />
+        <meta
+          name="keywords"
+          content="White Luxe, real estate Gurgaon, luxury homes, commercial property, retail leasing, property investment"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="White Luxe Real Estate" />
+        <link rel="canonical" href="https://www.whiteluxe.com" />
+      </Helmet>
     <Router>
       <Navbar />
       <Routes>
@@ -45,6 +61,8 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+    </>
+
   );
 }
 
