@@ -116,7 +116,7 @@ const DLFPrivanaNorth = () => {
       <div className="absolute inset-0" />
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-24 pb-10 md:py-20">
+      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-19 pb-10 md:py-20">
         {/* Top Content */}
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left Text Info */}
@@ -135,7 +135,7 @@ const DLFPrivanaNorth = () => {
           </div>
 
           {/* Right Form Box */}
-          <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
             <h2 className="text-2xl font-bold text-center mb-4">
               Let’s Find Your Dream Home!
             </h2>
@@ -152,7 +152,7 @@ const DLFPrivanaNorth = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
@@ -162,7 +162,7 @@ const DLFPrivanaNorth = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
@@ -172,7 +172,7 @@ const DLFPrivanaNorth = () => {
                 <input
                   type="tel"
                   placeholder="Your Number"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <button
@@ -220,9 +220,9 @@ const DLFPrivanaNorth = () => {
 
       {/* banner and about */}
 
-      <div className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
+      <div className="relative bg-[#fff] py-16 px-4 lg:px-20 overflow-hidden">
         {/* Half circle background effect */}
-        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#A3743D] rounded-full opacity-60 z-0"></div>
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#D7AE29] rounded-full opacity-60 z-0"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Image */}
@@ -235,12 +235,12 @@ const DLFPrivanaNorth = () => {
           </div>
 
           {/* Content */}
-          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-2 text-white">About Project</h3>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#fff] to-[#fff] text-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2 text-black">About Project</h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
               Four-side Open Residences
             </h2>
-            <p className="text-white text-base leading-relaxed">
+            <p className="text-black text-base leading-relaxed">
              DLF Privana North is a premium luxury residential development located in Gurugram, India. Thoughtfully designed with modern architecture and expansive living spaces, it offers a perfect blend of elegance, comfort, and functionality. With a wide range of world-class amenities, this upscale project redefines contemporary living—making it the ideal choice for those who seek both sophistication and convenience in one address.
             </p>
           </div>
@@ -251,7 +251,7 @@ const DLFPrivanaNorth = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
-            <span className="text-[#A3743D]">
+            <span className="text-[#D7AE29]">
              DLF Privana North - Sector 77, Southern Peripheral Road, Gurugram
             </span>
           </h2>
@@ -259,7 +259,7 @@ const DLFPrivanaNorth = () => {
           <div className="overflow-x-auto rounded-xl shadow-lg">
             <table className="min-w-full border border-gray-200">
               <thead>
-                <tr className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white text-left text-sm md:text-base">
+                <tr className="bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white text-left text-sm md:text-base">
                   <th className="py-4 px-6">UNIT TYPE</th>
                   <th className="py-4 px-6">UNIT SIZE</th>
                   <th className="py-4 px-6">UNIT PRICE</th>
@@ -291,7 +291,7 @@ const DLFPrivanaNorth = () => {
       {/* galllry img section  */}
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
         <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
-        <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
+        <h3 className="text-2xl text-[#D7AE29] font-semibold mb-6">
          DLF Privana North
         </h3>
 
@@ -313,7 +313,7 @@ const DLFPrivanaNorth = () => {
               alt={`Thumbnail ${idx + 1}`}
               onClick={() => setSelectedImage(img)}
               className={`w-24 h-16 md:w-32 md:h-20 rounded-md cursor-pointer object-cover border-2 transition-all duration-200 ${
-                selectedImage === img ? "[#A3743D]" : "border-transparent"
+                selectedImage === img ? "[#D7AE29]" : "border-transparent"
               }`}
             />
           ))}
@@ -327,7 +327,7 @@ const DLFPrivanaNorth = () => {
           <h2 className="text-2xl font-semibold text-800 mb-2 text-[#444]">
             Project Facilities
           </h2>
-          <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
+          <h3 className="text-3xl font-bold text-[#D7AE29] mb-8">
            DLF Privana North Amenities
           </h3>
 
@@ -361,26 +361,26 @@ const DLFPrivanaNorth = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
             Location Map
           </h2>
-          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">DLF Privana North</h3>
+          <h3 className="text-[#D7AE29] text-2xl font-bold mb-4">DLF Privana North</h3>
           <hr className="border-gray-300 mb-6" />
 
           <ul className="space-y-4 text-lg text-gray-800">
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
              Broadways Int'l School – 0.6 km
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
           Yaduvanshi Int'l School – 2.9 km
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               HUDA City Centre – 10.9 km
 
 
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
             Cyber City – 14.8 km
             </li>
            
@@ -400,16 +400,16 @@ const DLFPrivanaNorth = () => {
       {/* floor plan  */}
 
       <section className="bg-white py-12 px-4 lg:px-32 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#D7AE29] mb-8">
           FLOOR PLANS
-          <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
+          <div className="w-16 h-1 bg-[#D7AE29] mx-auto mt-2" />
         </h2>
 
         <div className="relative flex items-center justify-center max-w-6xl mx-auto">
           {/* Left Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+            className="absolute left-0 bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white p-3 rounded-sm z-20"
           >
             ❮
           </button>
@@ -463,7 +463,7 @@ const DLFPrivanaNorth = () => {
           {/* Right Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+            className="absolute right-0 bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white p-3 rounded-sm z-20"
           >
             ❯
           </button>
@@ -498,7 +498,7 @@ const DLFPrivanaNorth = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-[#444]">
             Site Map
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#D7AE29]">
             Master Plan Of DLF Privana North
           </h3>
         </div>

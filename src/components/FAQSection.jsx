@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import React from "react";
+
 const faqData = [
   { question: "How do I list my property on Urbanet?", answer: "You can list your property by registering and following the property listing steps in your dashboard." },
   { question: "Are the properties verified?", answer: "Yes, our team verifies each property listing before it's published." },
@@ -21,15 +22,22 @@ export default function FAQSection() {
     <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* Left Section */}
       <div>
-        <h2 className="text-4xl font-bold text-[#A3743D] mb-4">Frequently Asked Questions</h2>
+       <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] bg-clip-text text-transparent">
+  Frequently Asked Questions
+</h2>
+
         <p className="text-gray-500 text-lg mb-12">
           Answers to your real estate questions and concerns
         </p>
-        <h3 className="font-semibold text-gray-900 text-lg mb-2">Still have a Questions?</h3>
+        <h3 className="font-semibold text-[#A3743D] text-lg mb-2">
+          Still have a Questions?
+        </h3>
         <p className="text-gray-500 mb-4">
           We're here to help! Don’t hesitate—ask away and get the answers you need.
         </p>
-        <button className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white px-6 py-3 rounded-md hover:bg-[#a3733dd0] transition">Contact Us</button>
+        <button className="bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white px-6 py-3 rounded-md hover:opacity-90 transition">
+          Contact Us
+        </button>
       </div>
 
       {/* Right Section */}
@@ -40,10 +48,10 @@ export default function FAQSection() {
             className="border-b pb-4 cursor-pointer"
             onClick={() => toggle(index)}
           >
-            <div className="flex justify-between items-center text-lg font-medium text-gray-900">
+            <div className="flex justify-between items-center text-lg font-medium text-[#333]">
               {faq.question}
               <ChevronDown
-                className={`w-5 h-5 transition-transform duration-300 ${
+                className={`w-5 h-5 text-[#333] transition-transform duration-300 ${
                   openIndex === index ? "rotate-180" : ""
                 }`}
               />

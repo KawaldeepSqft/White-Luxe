@@ -56,25 +56,92 @@ const TarcIshva = () => {
   ];
 
   const amenities = [
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg", label: "Library" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg", label: "Intercom Facility" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Security_guard.jpeg", label: "Security Guard" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg", label: "Swimming Pool" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg", label: "Community Centre" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Visitor_parking.jpeg", label: "Visitor Parking" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg", label: "Piped Gas" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg", label: "GYM" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Waste_disposal.png", label: "Waste Disposal" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/CafeteriaFoodCourt.jpeg", label: "Cafeteria/Food Court" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/park.jpeg", label: "Park" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Lift.jpeg", label: "Lift" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg", label: "Maintenance Staff" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Kids_playarea.jpeg", label: "Kids Play Area" },
-    { image: "http://propertydekho247.com/img/FreshAmenities/jogging_track.jpeg", label: "Jogging Track" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg", label: "ATMs" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg", label: "Conference Room" },
-    { image: "https://www.propertydekho247.com/img/FreshAmenities/Club_house.jpeg", label: "Club House" },
-  ]
+    {
+      image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg",
+      label: "Library",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/IntercomFacility.jpeg",
+      label: "Intercom Facility",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Security_guard.jpeg",
+      label: "Security Guard",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/swiiming_pool.jpeg",
+      label: "Swimming Pool",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Community_Center.jpeg",
+      label: "Community Centre",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Visitor_parking.jpeg",
+      label: "Visitor Parking",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Piped_gas.jpeg",
+      label: "Piped Gas",
+    },
+    {
+      image: "https://www.propertydekho247.com/img/FreshAmenities/Gym.jpeg",
+      label: "GYM",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Waste_disposal.png",
+      label: "Waste Disposal",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/CafeteriaFoodCourt.jpeg",
+      label: "Cafeteria/Food Court",
+    },
+    {
+      image: "https://www.propertydekho247.com/img/FreshAmenities/park.jpeg",
+      label: "Park",
+    },
+    {
+      image: "https://www.propertydekho247.com/img/FreshAmenities/Lift.jpeg",
+      label: "Lift",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg",
+      label: "Maintenance Staff",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Kids_playarea.jpeg",
+      label: "Kids Play Area",
+    },
+    {
+      image:
+        "http://propertydekho247.com/img/FreshAmenities/jogging_track.jpeg",
+      label: "Jogging Track",
+    },
+    {
+      image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg",
+      label: "ATMs",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg",
+      label: "Conference Room",
+    },
+    {
+      image:
+        "https://www.propertydekho247.com/img/FreshAmenities/Club_house.jpeg",
+      label: "Club House",
+    },
+  ];
 
   const floorPlans = [
     // {
@@ -116,7 +183,7 @@ const TarcIshva = () => {
       <div className="absolute inset-0" />
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-24 pb-10 md:py-20">
+    <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-19 pb-10 md:py-20">
         {/* Top Content */}
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left Text Info */}
@@ -128,14 +195,14 @@ const TarcIshva = () => {
 
             <div className="flex items-center">
               <span className="text-xl font-semibold">Starting Price</span>
-              <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
+              <span className="bg-white text-[#D7AE29] text-xl font-bold px-4 py-1 rounded ml-2">
                 ₹ 9.7 Cr*
               </span>
             </div>
           </div>
 
           {/* Right Form Box */}
-          <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
             <h2 className="text-2xl font-bold text-center mb-4">
               Let’s Find Your Dream Home!
             </h2>
@@ -152,7 +219,7 @@ const TarcIshva = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
@@ -162,7 +229,7 @@ const TarcIshva = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
@@ -172,7 +239,7 @@ const TarcIshva = () => {
                 <input
                   type="tel"
                   placeholder="Your Number"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <button
@@ -220,9 +287,9 @@ const TarcIshva = () => {
 
       {/* banner and about */}
 
-      <div className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
+      <div className="relative bg-[#fff] py-16 px-4 lg:px-20 overflow-hidden">
         {/* Half circle background effect */}
-        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#A3743D] rounded-full opacity-60 z-0"></div>
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#D7AE29] rounded-full opacity-60 z-0"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Image */}
@@ -235,12 +302,12 @@ const TarcIshva = () => {
           </div>
 
           {/* Content */}
-          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-2 text-white">About Project</h3>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#fff] to-[#fff] text-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2 text-black">About Project</h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
               Four-side Open Residences
             </h2>
-            <p className="text-white text-base leading-relaxed">
+            <p className="text-black text-base leading-relaxed">
               At TARC Ishva, experience a blend of luxurious and harmonious
               lifestyle that celebrates the essence of your aspirations.
               Inspired by the four directions, TARC Ishva embodies the nurturing
@@ -257,7 +324,7 @@ const TarcIshva = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
-            <span className="text-[#A3743D]">
+            <span className="text-[#D7AE29]">
               TARC Ishva - Sector - 63A, Gurugram
             </span>
           </h2>
@@ -265,7 +332,7 @@ const TarcIshva = () => {
           <div className="overflow-x-auto rounded-xl shadow-lg">
             <table className="min-w-full border border-gray-200">
               <thead>
-                <tr className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white text-left text-sm md:text-base">
+                <tr className="bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white text-left text-sm md:text-base">
                   <th className="py-4 px-6">UNIT TYPE</th>
                   <th className="py-4 px-6">UNIT SIZE</th>
                   <th className="py-4 px-6">UNIT PRICE</th>
@@ -297,7 +364,7 @@ const TarcIshva = () => {
       {/* galllry img section  */}
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
         <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
-        <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
+        <h3 className="text-2xl text-[#D7AE29] font-semibold mb-6">
           Tarc Ishva
         </h3>
 
@@ -333,7 +400,7 @@ const TarcIshva = () => {
           <h2 className="text-2xl font-semibold text-800 mb-2 text-[#444]">
             Project Facilities
           </h2>
-          <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
+          <h3 className="text-3xl font-bold text-[#D7AE29] mb-8">
             Tarc Ishva Amenities
           </h3>
 
@@ -367,32 +434,32 @@ const TarcIshva = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
             Location Map
           </h2>
-          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">Tarc Ishva</h3>
+          <h3 className="text-[#D7AE29] text-2xl font-bold mb-4">Tarc Ishva</h3>
           <hr className="border-gray-300 mb-6" />
 
           <ul className="space-y-4 text-lg text-gray-800">
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               1 Km From Golf Course Road
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               10 Min From Sun City, Heritage
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               15 - 20 Min From Artemis, Medanta, Max.
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               15 Min From Shri Ram, Shikshantar, DPS, Amity
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               10 Min From DLF Golf Club
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               1.5 Km From Metro Station (Rapid)
             </li>
           </ul>
@@ -411,16 +478,16 @@ const TarcIshva = () => {
       {/* floor plan  */}
 
       <section className="bg-white py-12 px-4 lg:px-32 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#D7AE29] mb-8">
           FLOOR PLANS
-          <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
+          <div className="w-16 h-1 bg-[#D7AE29] mx-auto mt-2" />
         </h2>
 
         <div className="relative flex items-center justify-center max-w-6xl mx-auto">
           {/* Left Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+            className="absolute left-0 bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white p-3 rounded-sm z-20"
           >
             ❮
           </button>
@@ -474,7 +541,7 @@ const TarcIshva = () => {
           {/* Right Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+            className="absolute right-0 bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white p-3 rounded-sm z-20"
           >
             ❯
           </button>
@@ -509,7 +576,7 @@ const TarcIshva = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-[#444]">
             Site Map
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#D7AE29]">
             Master Plan Of Puri The Aravallis
           </h3>
         </div>

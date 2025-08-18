@@ -11,11 +11,10 @@ import {
 const ReqCallBack = () => {
   return (
     <section
-      className="bg-cover bg-center bg-no-repeat py-20  px-4 md:px-10 md:py-10  text-white"
+      className="bg-cover bg-center bg-no-repeat py-20 px-4 md:px-10 md:py-10 text-white"
       style={{ backgroundImage: `url('./img/cover.jpg')` }}
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start bg-black/60 p-5 rounded-lg md:p-10">
-      
         {/* Left - Contact Info */}
         <div>
           <p className="text-[#fff] uppercase tracking-widest mb-2">
@@ -69,10 +68,9 @@ const ReqCallBack = () => {
           </div>
         </div>
 
-      
         {/* Right - Form */}
-        <div className="bg-white text-black p-2 rounded-lg w-full  md:p-8">
-          <h3 className="text-3xl font-serif text-[#A3743D] text-center mb-6">
+        <div className="bg-white text-black p-2 rounded-lg w-full md:p-8">
+          <h3 className="text-3xl font-serif text-[#AF882E] text-center mb-6">
             Request a Call Back
           </h3>
           <form className="space-y-4">
@@ -104,7 +102,7 @@ const ReqCallBack = () => {
             />
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white py-2 rounded text-lg font-semibold tracking-wider hover:bg-[#a3733dc5] transition"
+              className="w-full bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white py-2 rounded text-lg font-semibold tracking-wider hover:opacity-90 transition"
             >
               SUBMIT
             </button>

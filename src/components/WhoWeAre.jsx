@@ -15,8 +15,8 @@ const WhoWeAre = () => {
 
         {/* Right Content */}
         <div className="text-center md:text-left">
-          <p className="text-[#444] text-2xl bolder mb-2">Who we are</p>
-          <h2 className="text-3xl md:text-5xl font-serif font-semibold text-[#A3743D] mb-6 leading-tight">
+          <p className="text-[#444] text-2xl font-bold mb-2">Who we are</p>
+          <h2 className="text-3xl md:text-5xl font-serif font-semibold text-[#AF882E] mb-6 leading-tight">
             Beyond Transactions, Building Relationships
           </h2>
           <p className="text-gray-700 mb-4">
@@ -29,7 +29,7 @@ const WhoWeAre = () => {
             we don’t just connect you to properties—we open doors to opportunities that create lasting success.
           </p>
 
-          <button className="border bg-blue-500-black px-6 py-2 text-black rounded-full text-sm tracking-widest hover:bg-blue-500 hover:text-white transition">
+          <button className="px-6 py-2 rounded-full text-sm tracking-widest text-white bg-gradient-to-r from-[#AF882E] to-[#D7AE29] hover:opacity-90 transition">
             DISCOVER MORE
           </button>
         </div>

@@ -52,7 +52,7 @@ const HeroSection = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
@@ -65,7 +65,7 @@ const HeroSection = () => {
         <p className="text-white/80 mt-6 text-lg md:text-xl">
           From modern apartments to premium villas, explore curated homes across
           Gurugram’s prime locations.{' '}
-          <a href="#" className="text-[#A3743D] font-semibold hover:underline">
+          <a href="#" className="text-[#D7AE29ff] font-semibold hover:underline">
             View Projects
           </a>
         </p>
@@ -79,8 +79,8 @@ const HeroSection = () => {
                 onClick={() => setActive(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium ${
                   active === cat
-                    ? "bg-[#A3743D] text-white"
-                    : "bg-white text-[#a3733dcb]"
+                    ? "bg-[#D7AE29ff] text-white"
+                    : "bg-white text-[#D7AE29ff]"
                 }`}
               >
                 {cat}
@@ -101,7 +101,7 @@ const HeroSection = () => {
                 {suggestions.map((proj) => (
                   <div
                     key={proj.path}
-                    className="px-4 py-2 hover:bg-[#f6f3ef] cursor-pointer text-[#A3743D] font-medium"
+                    className="px-4 py-2 hover:bg-[#f6f3ef] cursor-pointer text-[#D7AE29ff] font-medium"
                     onClick={() => handleSuggestionClick(proj.path)}
                   >
                     {proj.name}
@@ -111,7 +111,7 @@ const HeroSection = () => {
             )}
           </div>
 
-          <button className="bg-[#A3743D] hover:bg-[#a3733d9d] text-white px-5 py-3 text-sm font-semibold rounded-full">
+          <button className="bg-[#D7AE29ff] hover:bg-[#D7AE29ff] text-white px-5 py-3 text-sm font-semibold rounded-full">
             Search
           </button>
 
@@ -121,7 +121,7 @@ const HeroSection = () => {
               <p>✔ Personalized Property Assistance</p>
               <p>✔ Prime Gurugram Locations</p>
             </div>
-            <button className="mt-2 bg-white text-[#A3743D] font-semibold px-5 py-2 rounded-full shadow-md">
+            <button className="mt-2 bg-white text-[#D7AE29ff] font-semibold px-5 py-2 rounded-full shadow-md">
               Get Free Consultation
             </button>
           </div>
@@ -133,7 +133,7 @@ const HeroSection = () => {
             <select
               value={active}
               onChange={(e) => setActive(e.target.value)}
-              className="bg-[#A3743D] text-white text-base font-semibold px-4 py-3 outline-none cursor-pointer"
+              className="bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white text-base font-semibold px-4 py-3 outline-none cursor-pointer"
             >
               {categories.map((cat) => (
                 <option key={cat} value={cat}>
@@ -155,7 +155,7 @@ const HeroSection = () => {
                   {suggestions.map((proj) => (
                     <div
                       key={proj.path}
-                      className="px-4 py-2 hover:bg-[#f6f3ef] cursor-pointer text-[#A3743D] font-medium"
+                      className="px-4 py-2 hover:bg-[#f6f3ef] cursor-pointer text-[#D7AE29ff] font-medium"
                       onClick={() => handleSuggestionClick(proj.path)}
                     >
                       {proj.name}
@@ -165,7 +165,7 @@ const HeroSection = () => {
               )}
             </div>
 
-            <button className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] hover:opacity-90 text-white px-8 py-3 text-base font-semibold">
+            <button className="bg-gradient-to-r from-[#AF882E] to-[#D7AE29] hover:opacity-90 text-white px-8 py-3 text-base font-semibold">
               Search
             </button>
           </div>
@@ -174,7 +174,7 @@ const HeroSection = () => {
             <p>✔ Need help choosing the right property?</p>
             <p>✔ Personalized Property Assistance</p>
             <p>✔ Prime Gurugram Locations</p>
-            <button className="mt-4 bg-white text-[#A3743D] font-semibold px-6 py-2 rounded-full shadow-md">
+            <button className="mt-4 bg-white text-[#D7AE29ff] font-semibold px-6 py-2 rounded-full shadow-md">
               Get Free Consultation
             </button>
           </div>

@@ -4,12 +4,12 @@ import { MdApartment } from "react-icons/md";
 import { RiBuilding2Line } from "react-icons/ri";
 import { TbRulerMeasure } from "react-icons/tb";
 
-import img1 from '/img/AiplAutograp/g1.jpg';
-import img2 from '/img/AiplAutograp/g2.jpg';
-import img3 from '/img/AiplAutograp/g3.jpg';
-import img4 from '/img/AiplAutograp/g5.jpg';
-import img5 from'/img/AiplAutograp/g7.jpg';
-import img6 from '/img/AiplAutograp/g8.jpg';
+import img1 from "/img/AiplAutograp/g1.jpg";
+import img2 from "/img/AiplAutograp/g2.jpg";
+import img3 from "/img/AiplAutograp/g3.jpg";
+import img4 from "/img/AiplAutograp/g5.jpg";
+import img5 from "/img/AiplAutograp/g7.jpg";
+import img6 from "/img/AiplAutograp/g8.jpg";
 // import img7 from "/img/Godrej-Astra/h1.png"
 // import img8 from "/img/Godrej-Astra/h1.png"
 import { FaCheckCircle } from "react-icons/fa";
@@ -21,7 +21,6 @@ const AiplAutograph = () => {
     { type: "Virtual Office ", size: "500 Sq.Ft*", price: "Price on call" },
     { type: "Self Use Office", size: "4698 Sq.Ft*", price: "Price on call" },
     { type: "Restaurants", size: "951 SQ.FT", price: "Price on call" },
-
   ];
 
   const data = [
@@ -35,7 +34,7 @@ const AiplAutograph = () => {
       title: "Total Tower",
       value: "3",
     },
-    
+
     {
       icon: <FaBuilding size={24} />,
       title: "Payment Plan",
@@ -115,8 +114,7 @@ const AiplAutograph = () => {
         "https://www.propertydekho247.com/img/FreshAmenities/Maintainance_Staff.jpeg",
       label: "Maintenance Staff",
     },
-   
-   
+
     {
       image: "https://www.propertydekho247.com/img/FreshAmenities/ATMs.jpeg",
       label: "ATMs",
@@ -126,7 +124,6 @@ const AiplAutograph = () => {
         "https://www.propertydekho247.com/img/FreshAmenities/Conference_room.jpeg",
       label: "Restrooms",
     },
-  
   ];
 
   const floorPlans = [
@@ -173,31 +170,31 @@ const AiplAutograph = () => {
       <div className="absolute inset-0" />
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-24 pb-10 md:py-20">
+      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-19 pb-10 md:py-20">
         {/* Top Content */}
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left Text Info */}
           <div className="text-white max-w-xl">
             <h4 className="text-2xl font-semibold mb-2">GURGAON</h4>
             <h1 className="text-5xl md:text-5xl font-bold mb-4">
-             Aipl Autograph
+              Aipl Autograph
             </h1>
-            <p className="text-xl font-bold mb-1">Office Space &
-Restaurants (Retail)</p>
-            <p className="text-xl  font-bold mb-4">
-            Sector 108, Gurugram
+            <p className="text-xl font-bold mb-1">
+              Office Space & Restaurants (Retail)
             </p>
+            <p className="text-xl  font-bold mb-4">Sector 108, Gurugram</p>
 
             <div className="flex items-center">
               <span className="text-xl font-semibold">Starting Price</span>
-              <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
+              <span className="bg-white text-[#D7AE29] text-xl font-bold px-4 py-1 rounded ml-2">
                 ₹ 71 Lakhs*
               </span>
             </div>
           </div>
 
           {/* Right Form Box */}
-          <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+          {/* Right Form Box */}
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
             <h2 className="text-2xl font-bold text-center mb-4">
               Let’s Find Your Dream Home!
             </h2>
@@ -214,7 +211,7 @@ Restaurants (Retail)</p>
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
@@ -224,7 +221,7 @@ Restaurants (Retail)</p>
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
@@ -234,7 +231,7 @@ Restaurants (Retail)</p>
                 <input
                   type="tel"
                   placeholder="Your Number"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <button
@@ -282,9 +279,9 @@ Restaurants (Retail)</p>
 
       {/* banner and about */}
 
-      <div className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
+      <div className="relative bg-[#fff] py-16 px-4 lg:px-20 overflow-hidden">
         {/* Half circle background effect */}
-        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#A3743D] rounded-full opacity-60 z-0"></div>
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#D7AE29] rounded-full opacity-60 z-0"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Image */}
@@ -297,13 +294,23 @@ Restaurants (Retail)</p>
           </div>
 
           {/* Content */}
-          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-2 text-white">About Project</h3>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#fff] to-[#fff] text-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2 text-black">About Project</h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
               Aipl Autograph
             </h2>
-            <p className="text-white text-base leading-relaxed">
-            AIPL Autograph is a Grade ‘A’ office development spread over 6.13 acres, offering a modern, interactive environment for tenants and retail patrons. With unique floor plates ranging from 12,000 to 120,000 sq. ft., it maximizes workspace and views. A 15,000 sq. ft. triple-height entrance lobby sets a grand tone, while 15–24 PAX high-speed elevators with Destination Control ensure smooth movement. The iconic, energy-efficient façade features a double-glazed unitized system with stone cladding. The project includes four levels of basement parking, a dedicated drop-off area, and excellent retail visibility—making it a landmark commercial destination.
+            <p className="text-black text-base leading-relaxed">
+              AIPL Autograph is a Grade ‘A’ office development spread over 6.13
+              acres, offering a modern, interactive environment for tenants and
+              retail patrons. With unique floor plates ranging from 12,000 to
+              120,000 sq. ft., it maximizes workspace and views. A 15,000 sq.
+              ft. triple-height entrance lobby sets a grand tone, while 15–24
+              PAX high-speed elevators with Destination Control ensure smooth
+              movement. The iconic, energy-efficient façade features a
+              double-glazed unitized system with stone cladding. The project
+              includes four levels of basement parking, a dedicated drop-off
+              area, and excellent retail visibility—making it a landmark
+              commercial destination.
             </p>
           </div>
         </div>
@@ -313,15 +320,15 @@ Restaurants (Retail)</p>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
-            <span className="text-[#A3743D]">
-             Aipl Autograph, Sector 54, Golf Course Road, Gurugram
+            <span className="text-[#D7AE29]">
+              Aipl Autograph, Sector 54, Golf Course Road, Gurugram
             </span>
           </h2>
 
           <div className="overflow-x-auto rounded-xl shadow-lg">
             <table className="min-w-full border border-gray-200">
               <thead>
-                <tr className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white text-left text-sm md:text-base">
+                <tr className="bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white text-left text-sm md:text-base">
                   <th className="py-4 px-6">UNIT TYPE</th>
                   <th className="py-4 px-6">UNIT SIZE</th>
                   <th className="py-4 px-6">UNIT PRICE</th>
@@ -353,8 +360,8 @@ Restaurants (Retail)</p>
       {/* galllry img section  */}
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
         <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
-        <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
-         Aipl Autograph
+        <h3 className="text-2xl text-[#D7AE29] font-semibold mb-6">
+          Aipl Autograph
         </h3>
 
         {/* Main Image */}
@@ -375,7 +382,7 @@ Restaurants (Retail)</p>
               alt={`Thumbnail ${idx + 1}`}
               onClick={() => setSelectedImage(img)}
               className={`w-24 h-16 md:w-32 md:h-20 rounded-md cursor-pointer object-cover border-2 transition-all duration-200 ${
-                selectedImage === img ? "[#A3743D]" : "border-transparent"
+                selectedImage === img ? "[#D7AE29]" : "border-transparent"
               }`}
             />
           ))}
@@ -389,8 +396,8 @@ Restaurants (Retail)</p>
           <h2 className="text-2xl font-semibold text-800 mb-2 text-[#444]">
             Project Facilities
           </h2>
-          <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
-           Aipl Autograph Amenities
+          <h3 className="text-3xl font-bold text-[#D7AE29] mb-8">
+            Aipl Autograph Amenities
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -423,44 +430,43 @@ Restaurants (Retail)</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
             Location Map
           </h2>
-          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">
-           Aipl Autograph
+          <h3 className="text-[#D7AE29] text-2xl font-bold mb-4">
+            Aipl Autograph
           </h3>
           <hr className="border-gray-300 mb-6" />
 
           <ul className="space-y-4 text-lg text-gray-800">
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-             0.8 km. - DPS International
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
+              0.8 km. - DPS International
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-    0.3 km. - St. Xavier’s School
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
+              0.3 km. - St. Xavier’s School
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-            5.6 km. - Rapid Metro Sector 55-56
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
+              5.6 km. - Rapid Metro Sector 55-56
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-             0.3 km. - Golf Course Extn. Road
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
+              0.3 km. - Golf Course Extn. Road
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-      8.0 km. - Huda City Centre Metro Station
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
+              8.0 km. - Huda City Centre Metro Station
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
-          25 km. - IGI Airport
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
+              25 km. - IGI Airport
             </li>
-           
           </ul>
         </div>
 
         {/* Image Section */}
         <div className="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
           <img
-            src='/img/AiplAutograp/map.webp'
+            src="/img/AiplAutograp/map.webp"
             alt="Location Map"
             className="w-full h-auto object-cover"
           />
@@ -468,9 +474,6 @@ Restaurants (Retail)</p>
       </div>
 
       {/* floor plan  */}
-
-     
-
 
       {/* site map */}
 
@@ -480,7 +483,7 @@ Restaurants (Retail)</p>
           <h2 className="text-2xl md:text-3xl font-semibold text-[#444]">
             Site Map
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#D7AE29]">
             Master Plan Of Aipl Autograph
           </h3>
         </div>
@@ -488,7 +491,7 @@ Restaurants (Retail)</p>
         {/* Image with hover effect */}
         <div className="max-w-7xl mx-auto rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
           <img
-            src='/img/AiplAutograp/map.jpg' // 🔁 Replace with actual image path
+            src="/img/AiplAutograp/map.jpg" // 🔁 Replace with actual image path
             alt="Master Plan of TulipMonsella"
             className="w-full h-auto object-cover"
           />

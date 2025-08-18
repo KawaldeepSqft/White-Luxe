@@ -9,7 +9,6 @@ import client7 from "/img/godrejj.png";
 import client8 from "/img/tarc.png";
 import Marquee from "react-fast-marquee";
 
-
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,16 +21,14 @@ const Clients = () => {
   }, []);
 
   return (
-    <div data-aos="fade-down" className="text-[#A3743D] bold">
+    <div data-aos="fade-down" className="text-[#AF882E] font-bold">
       <h1 className="text-3xl font-semibold text-center">We Work With</h1>
       <div className="flex justify-center items-center mt-2">
-        <div className="bg-[#A3743D] h-1 w-16 rounded"></div>
+        <div className="bg-gradient-to-r from-[#AF882E] to-[#D7AE29] h-1 w-16 rounded"></div>
       </div>
-      {/* <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-        Our Learners Work at Global Companies & Startups
-      </p> */}
+
       {/* Logo slider */}
-      <Marquee pauseOnHover="true" className="flex items-center">
+      <Marquee pauseOnHover={true} className="flex items-center mt-8">
         <img className="w-28 mr-20" src={client1} alt="img1" />
         {/* <img className="w-28 mr-20" src={client2} alt="img2" />*/}
         <img className="w-28 mr-20" src={client3} alt="img3" />
@@ -44,4 +41,5 @@ const Clients = () => {
     </div>
   );
 };
+
 export default Clients;

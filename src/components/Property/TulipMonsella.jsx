@@ -189,7 +189,7 @@ const TulipMonsella = () => {
       <div className="absolute inset-0" />
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-24 pb-10 md:py-20">
+    <div className="relative z-10 flex flex-col justify-between h-full px-6 md:px-20 pt-19 pb-10 md:py-20">
         {/* Top Content */}
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left Text Info */}
@@ -205,7 +205,7 @@ const TulipMonsella = () => {
 
             <div className="flex items-center">
               <span className="text-xl font-semibold">Starting Price</span>
-              <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
+              <span className="bg-white text-[#D7AE29] text-xl font-bold px-4 py-1 rounded ml-2">
                 ₹ 7.18 Cr*
               </span>
             </div>
@@ -299,7 +299,7 @@ const TulipMonsella = () => {
 
       <div className="relative bg-[#eaf6ff] py-16 px-4 lg:px-20 overflow-hidden">
         {/* Half circle background effect */}
-        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#A3743D] rounded-full opacity-60 z-0"></div>
+        <div className="absolute -bottom-20 -right-20 w-[300px] h-[300px] bg-[#D7AE29] rounded-full opacity-60 z-0"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           {/* Image */}
@@ -312,12 +312,12 @@ const TulipMonsella = () => {
           </div>
 
           {/* Content */}
-          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold mb-2 text-white">About Project</h3>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <div className="w-full lg:w-1/2 bg-gradient-to-r from-[##fff] to-[#fff] text-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-xl font-bold mb-2 text-black">About Project</h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
               Tulip Monsella
             </h2>
-            <p className="text-white text-base leading-relaxed">
+            <p className="text-black text-base leading-relaxed">
               Inspired by timeless perfection and unmatched brilliance, the
               Platinum Collection is more than a home—it's a rare retreat into
               the realm of untapped luxury. Crafted for those who relentlessly
@@ -339,7 +339,7 @@ const TulipMonsella = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             How Much <br />
-            <span className="text-[#A3743D]">
+            <span className="text-[#D7AE29]">
              Tulip Monsella, Sector 54, Golf Course Road, Gurugram
             </span>
           </h2>
@@ -347,7 +347,7 @@ const TulipMonsella = () => {
           <div className="overflow-x-auto rounded-xl shadow-lg">
             <table className="min-w-full border border-gray-200">
               <thead>
-                <tr className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white text-left text-sm md:text-base">
+                <tr className="bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white text-left text-sm md:text-base">
                   <th className="py-4 px-6">UNIT TYPE</th>
                   <th className="py-4 px-6">UNIT SIZE</th>
                   <th className="py-4 px-6">UNIT PRICE</th>
@@ -379,7 +379,7 @@ const TulipMonsella = () => {
       {/* galllry img section  */}
       <section className="bg-[#eaf6ff] py-12 px-4 lg:px-20">
         <h2 className="text-3xl font-bold text-[#444] mb-2">Gallery</h2>
-        <h3 className="text-2xl text-[#A3743D] font-semibold mb-6">
+        <h3 className="text-2xl text-[#D7AE29] font-semibold mb-6">
          Tulip Monsella
         </h3>
 
@@ -415,7 +415,7 @@ const TulipMonsella = () => {
           <h2 className="text-2xl font-semibold text-800 mb-2 text-[#444]">
             Project Facilities
           </h2>
-          <h3 className="text-3xl font-bold text-[#A3743D] mb-8">
+          <h3 className="text-3xl font-bold text-[#D7AE29] mb-8">
            Tulip Monsella Amenities
           </h3>
 
@@ -449,28 +449,28 @@ const TulipMonsella = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#444] mb-2">
             Location Map
           </h2>
-          <h3 className="text-[#A3743D] text-2xl font-bold mb-4">
+          <h3 className="text-[#D7AE29] text-2xl font-bold mb-4">
            Tulip Monsella
           </h3>
           <hr className="border-gray-300 mb-6" />
 
           <ul className="space-y-4 text-lg text-gray-800">
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
                2 Min from One Horizon Centre
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
              5 Min from MG Road
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
              5 Min from Fortis Hospital
 
 
             </li>
             <li className="flex items-start gap-3">
-              <FaCheckCircle className="text-[#A3743D] mt-1 text-base sm:text-lg" />
+              <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
               1 Min from Rapid Metro Station
             </li>
            
@@ -490,16 +490,16 @@ const TulipMonsella = () => {
       {/* floor plan  */}
 
       <section className="bg-white py-12 px-4 lg:px-32 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#7A5520] mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#D7AE29] mb-8">
           FLOOR PLANS
-          <div className="w-16 h-1 bg-[#7A5520] mx-auto mt-2" />
+          <div className="w-16 h-1 bg-[#D7AE29] mx-auto mt-2" />
         </h2>
 
         <div className="relative flex items-center justify-center max-w-6xl mx-auto">
           {/* Left Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+            className="absolute left-0 bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white p-3 rounded-sm z-20"
           >
             ❮
           </button>
@@ -553,7 +553,7 @@ const TulipMonsella = () => {
           {/* Right Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-3 rounded-sm z-20"
+            className="absolute right-0 bg-gradient-to-r from-[#D7AE29] to-[#D7AE29] text-white p-3 rounded-sm z-20"
           >
             ❯
           </button>
@@ -588,7 +588,7 @@ const TulipMonsella = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-[#444]">
             Site Map
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#A3743D]">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#D7AE29]">
             Master Plan Of Tulip Monsella
           </h3>
         </div>

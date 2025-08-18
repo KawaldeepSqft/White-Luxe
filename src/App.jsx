@@ -16,6 +16,7 @@ import TulipMonsella from './components/Property/TulipMonsella';
 import AiplAutograph from './components/Property/AiplAutograph';
 import DLFPrivanaNorth from './components/Property/DLFPriveNorth';
 import { Helmet } from 'react-helmet';
+import WelcomeModal from './components/WelcomeModal';
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
           path="/"
           element={
             <>
-            
+              <WelcomeModal/>
               <HeroSection />
               <DiscoverProperties />
               <Services />
