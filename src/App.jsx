@@ -42,14 +42,39 @@ function App() {
           path="/"
           element={
             <>
-              <WelcomeModal/>
-              <HeroSection />
-              <DiscoverProperties id="discover" />
-              <Services />
-              <ReqCallBack />
-              <WhoWeAre  id="whoWeAre" />
-              <Clients />
-              <FAQSection />
+            <>
+  <WelcomeModal/>
+  <div id="home">
+    <HeroSection />
+  </div>
+
+  <div id="discover">
+    <DiscoverProperties />
+  </div>
+
+  <div id="services">
+    <Services />
+  </div>
+
+  <div id="reqCallBack">
+    <ReqCallBack />
+  </div>
+
+  <div id="whoWeAre">
+    <WhoWeAre />
+  </div>
+
+  <div id="clients">
+    <Clients />
+  </div>
+
+  <div id="faq">
+    <FAQSection />
+  </div>
+
+  
+</>
+
             </>
           }
         />
@@ -60,7 +85,9 @@ function App() {
        <Route path="/properties/Aipl-Autograph" element= {<AiplAutograph/>}/>
        <Route path="/properties/DLF-Privana-North" element= {<DLFPrivanaNorth/>}/>
       </Routes>
-      <Footer  id="footer" />
+     <div id="footer">
+    <Footer />
+  </div>
     </Router>
     </>
 

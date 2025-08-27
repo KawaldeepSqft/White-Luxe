@@ -6,12 +6,13 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const navItems = [
-    { label: "HOME", to: "home" },
-    { label: "BUY", to: "discover" },
-    { label: "ABOUT", to: "whoWeAre" },
-    { label: "CONTACT", to: "footer" },
-  ];
+const navItems = [
+  { to: "home", label: "Home" },
+  { to: "discover", label: "Discover" },
+  { to: "whoWeAre", label: "Who We Are" },
+  { to: "footer", label: "Contact" }
+];
+
 
   useEffect(() => {
     const handleScroll = () => {
