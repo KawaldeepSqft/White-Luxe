@@ -46,7 +46,7 @@ const WelcomeModal = () => {
         }}
       >
         <img
-          src="/img/popup.png"
+          src="/img/Banner.png"
           alt="Welcome"
           style={{ width: "100%", borderRadius: "8px" }}
         />

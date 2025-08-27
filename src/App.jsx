@@ -44,23 +44,23 @@ function App() {
             <>
               <WelcomeModal/>
               <HeroSection />
-              <DiscoverProperties />
+              <DiscoverProperties id="discover" />
               <Services />
               <ReqCallBack />
-              <WhoWeAre />
+              <WhoWeAre  id="whoWeAre" />
               <Clients />
               <FAQSection />
             </>
           }
         />
-       
+
         <Route path="/properties/Tarc-Ishva" element= {<TarcIshva/>} />
        <Route path="/properties/Godrej-Astra" element= {<GodrejAstra/>} />
        <Route path="/properties/Tulip-Monsella" element= {<TulipMonsella/>}/>
        <Route path="/properties/Aipl-Autograph" element= {<AiplAutograph/>}/>
        <Route path="/properties/DLF-Privana-North" element= {<DLFPrivanaNorth/>}/>
       </Routes>
-      <Footer />
+      <Footer  id="footer" />
     </Router>
     </>
 

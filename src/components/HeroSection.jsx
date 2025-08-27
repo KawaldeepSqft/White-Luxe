@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const categories = ["All", "Residential", "Commercial"];
-
+import { BsTelephone } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
 const projects = [
   { name: "Tarc Ishva", path: "/properties/Tarc-Ishva" },
   { name: "Godrej Astra", path: "/properties/Godrej-Astra" },
@@ -126,6 +127,28 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
+
+        {/* Floating Action Buttons */}
+<div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+  {/* Call Button */}
+  <a
+    href="tel:+919815202102" // <-- Apna phone number dalna
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-[#D7AE29] text-white shadow-lg hover:scale-110 transition"
+  >
+    <BsTelephone size={22} />
+  </a>
+
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/919815202102" // <-- Apna WhatsApp number dalna (country code ke sath)
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition"
+  >
+    <FaWhatsapp size={24} />
+  </a>
+</div>
+
 
         {/* ===== Desktop Layout ===== */}
         <div className="hidden md:flex flex-col items-center gap-6 mt-12">

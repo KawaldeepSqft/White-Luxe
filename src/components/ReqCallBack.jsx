@@ -29,13 +29,13 @@ const ReqCallBack = () => {
               <div className="border p-3 rounded-sm">
                 <FaEnvelope />
               </div>
-              <span>support@Whiteluxe.com</span>
+              <span>support@whiteluxerealestate.com</span>
             </div>
             <div className="flex items-center gap-4">
               <div className="border p-3 rounded-sm">
                 <FaPhoneAlt />
               </div>
-              <span>+91 98765 43210</span>
+              <span>+91 9815202102</span>
             </div>
             <div className="flex items-start gap-4">
               <div className="border p-3 rounded-sm mt-1">

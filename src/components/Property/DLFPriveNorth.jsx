@@ -121,14 +121,14 @@ const DLFPrivanaNorth = () => {
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left Text Info */}
           <div className="text-white max-w-xl">
-            <h4 className="text-2xl font-semibold mb-2">GURGAON</h4>
-            <h1 className="text-5xl md:text-5xl font-bold mb-4">DLF Privana North</h1>
-            <p className="text-xl font-bold mb-1">Luxury Apartment</p>
-            <p className="text-xl  font-bold mb-4">Sector 77, Southern Peripheral Road, Gurugram</p>
+            <h4 className="text-2xl text-[#333] font-semibold mb-2">GURGAON</h4>
+            <h1 className="text-5xl  text-[#333] md:text-5xl font-bold mb-4">DLF Privana North</h1>
+            <p className="text-xl   text-[#333] font-bold mb-1">Luxury Apartment</p>
+            <p className="text-xl  text-[#333]  font-bold mb-4">Sector 77, Southern Peripheral Road, Gurugram</p>
 
             <div className="flex items-center">
-              <span className="text-xl font-semibold">Starting Price</span>
-              <span className="bg-white text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
+              <span className="text-xl text-[#333] font-semibold">Starting Price</span>
+              <span className="bg-white  text-[#a16e20] text-xl font-bold px-4 py-1 rounded ml-2">
                 ₹ 9.7 Cr*
               </span>
             </div>
@@ -136,17 +136,17 @@ const DLFPrivanaNorth = () => {
 
           {/* Right Form Box */}
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
-            <h2 className="text-2xl font-bold text-center mb-4">
+            <h2 className="text-2xl font-bold text-center mb-4 text-[#333] ">
               Let’s Find Your Dream Home!
             </h2>
-            <p className="text-center text-sm mb-6">
+            <p className="text-center text-sm mb-6 text-[#333]">
               Please fill out the form below, our expert will get back to you
               soon.
             </p>
 
             <form className="space-y-4">
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#333]">
                   <i className="fas fa-user" />
                 </span>
                 <input
@@ -156,7 +156,7 @@ const DLFPrivanaNorth = () => {
                 />
               </div>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#333]">
                   <i className="fas fa-envelope" />
                 </span>
                 <input
@@ -238,7 +238,7 @@ const DLFPrivanaNorth = () => {
           <div className="w-full lg:w-1/2 bg-gradient-to-r from-[#fff] to-[#fff] text-white p-8 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold mb-2 text-black">About Project</h3>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
-              Four-side Open Residences
+
             </h2>
             <p className="text-black text-base leading-relaxed">
              DLF Privana North is a premium luxury residential development located in Gurugram, India. Thoughtfully designed with modern architecture and expansive living spaces, it offers a perfect blend of elegance, comfort, and functionality. With a wide range of world-class amenities, this upscale project redefines contemporary living—making it the ideal choice for those who seek both sophistication and convenience in one address.
@@ -383,7 +383,7 @@ const DLFPrivanaNorth = () => {
               <FaCheckCircle className="text-[#D7AE29] mt-1 text-base sm:text-lg" />
             Cyber City – 14.8 km
             </li>
-           
+
           </ul>
         </div>
 

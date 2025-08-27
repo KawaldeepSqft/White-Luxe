@@ -63,10 +63,11 @@ export default function Footer() {
           </h3>
           <div className="flex mb-3">
             <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-l focus:outline-none text-[15px] text-black"
-            />
+  type="email"
+  placeholder="Enter your email"
+  className="w-full px-4 py-2 border border-gray-300 rounded-l focus:outline-none text-[15px] text-black placeholder-white"
+/>
+
             <button className="bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white px-4 rounded-r text-[15px]">
               Submit
             </button>
@@ -83,11 +84,27 @@ export default function Footer() {
 
           {/* Icons */}
           <div className="flex flex-wrap gap-4 mb-4 md:mb-0">
-            <div className="flex items-center gap-1"><FaFacebookF /> Facebook</div>
-            <div className="flex items-center gap-1"><FaXTwitter /> Twitter</div>
-            <div className="flex items-center gap-1"><FaInstagram /> Instagram</div>
-            <div className="flex items-center gap-1"><FaLinkedinIn /> Linkedin</div>
-            <div className="flex items-center gap-1"><FaYoutube /> Youtube</div>
+
+           <a
+  href="https://www.facebook.com/profile.php?id=61578629881423"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-1 hover:text-[#AF882E] transition"
+>
+  <FaFacebookF /> Facebook
+</a>
+
+<a
+  href="https://www.instagram.com/whiteluxe_real_estate/?fbclid=IwY2xjawMbcBxleHRuA2FlbQIxMABicmlkETFpVVVTQmE1cDdhdkFHY09GAR65_YFcgQLN_miqLjnQc6CHAgl5eHJHNj3_-U5LukIymlZgtwMXxg8roIudLw_aem_K3wopv0sszCEOcOuhBfQdw#"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-1 hover:text-[#AF882E] transition"
+>
+  <FaInstagram /> Instagram
+</a>
+
+            {/* <div className="flex items-center gap-1"><FaLinkedinIn /> Linkedin</div>
+            <div className="flex items-center gap-1"><FaYoutube /> Youtube</div> */}
           </div>
 
           {/* Copyright */}
