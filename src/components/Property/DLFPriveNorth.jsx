@@ -14,6 +14,7 @@ import img5 from "/img/DlfPrivena/g5.jpg";
 // import img8 from "/img/background.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
+import axios, { Axios } from "axios";
 const images = [img1, img2, img3, img4, img5,];
 
 const DLFPrivanaNorth = () => {
@@ -54,6 +55,49 @@ const DLFPrivanaNorth = () => {
       value: "July 2031",
     },
   ];
+
+  const [name, SetName]= useState("")
+  const [email, SetEmail]= useState("")
+  const [phone, SetPhone]= useState("")
+  const [projectName, SetProjectName]= useState("DLF Privana North")
+
+  const handleName =(e)=>{
+    SetName(e.target.value)
+  }
+  const handleEmail =(e)=>{
+    SetEmail(e.target.value)
+  }
+  const handlePhone =(e)=>{
+    SetPhone(e.target.value)
+  }
+  // const handleProject =(e)=>{
+  //   SetName(e.target.value)
+  // }
+
+ const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name,
+      email,
+      phone,
+      projectName,
+    };
+
+    try {
+      const response = await axios.post("https://whitelux-backend.onrender.com/submit", formData);
+      alert(response.data.message);
+      
+      // Reset fields after success
+      SetName("");
+      SetEmail("");
+      SetPhone("");
+      SetProjectName("Godrej Astra");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("❌ Something went wrong! Please try again.");
+    }
+  };
 
   const amenities = [
     { image: "https://www.propertydekho247.com/img/FreshAmenities/Library.jpeg", label: "Library" },
@@ -144,24 +188,30 @@ const DLFPrivanaNorth = () => {
               soon.
             </p>
 
-            <form className="space-y-4">
+             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#333]">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
                   <i className="fas fa-user" />
                 </span>
+                
                 <input
                   type="text"
                   placeholder="Your Name"
+                  value={name}
+                  onChange={handleName}
+
                   className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#333]">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
                   <i className="fas fa-envelope" />
                 </span>
                 <input
                   type="email"
                   placeholder="Your Email"
+                  value={email}
+                  onChange={handleEmail}
                   className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
@@ -172,10 +222,13 @@ const DLFPrivanaNorth = () => {
                 <input
                   type="tel"
                   placeholder="Your Number"
+                  value={phone}
+                  onChange={handlePhone}
                   className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none text-white"
                 />
               </div>
               <button
+              onSubmit={handleSubmit}
                 type="submit"
                 className="w-full bg-white text-[#7A5520] font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
               >

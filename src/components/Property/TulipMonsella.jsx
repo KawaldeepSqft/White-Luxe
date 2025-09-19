@@ -14,6 +14,7 @@ import img6 from "/img/TulipMonsella/g6.webp"
 // import img8 from "/img/Godrej-Astra/h1.png"
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
+import axios from "axios";
 const images = [img1, img2, img3, img4, img5, img6];
 
 const TulipMonsella = () => {
@@ -180,6 +181,48 @@ const TulipMonsella = () => {
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
+  const [name, SetName]= useState("")
+  const [email, SetEmail]= useState("")
+  const [phone, SetPhone]= useState("")
+  const [projectName, SetProjectName]= useState("Tulip Monsella")
+
+  const handleName =(e)=>{
+    SetName(e.target.value)
+  }
+  const handleEmail =(e)=>{
+    SetEmail(e.target.value)
+  }
+  const handlePhone =(e)=>{
+    SetPhone(e.target.value)
+  }
+  // const handleProject =(e)=>{
+  //   SetName(e.target.value)
+  // }
+
+ const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      name,
+      email,
+      phone,
+      projectName,
+    };
+
+    try {
+      const response = await axios.post("https://whitelux-backend.onrender.com/submit", formData);
+      alert(response.data.message);
+      
+      // Reset fields after success
+      SetName("");
+      SetEmail("");
+      SetPhone("");
+      SetProjectName("Godrej Astra");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("❌ Something went wrong! Please try again.");
+    }
+  };
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center"
@@ -212,7 +255,7 @@ const TulipMonsella = () => {
           </div>
 
           {/* Right Form Box */}
-          <div className="bg-gradient-to-r from-[#A3743D] to-[#C49A6C] text-white p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
+           <div className="bg-white/10 backdrop-blur-lg border border-white/20 text-black p-8 rounded-lg w-full max-w-md mt-10 md:mt-0 md:ml-12 shadow-lg">
             <h2 className="text-2xl font-bold text-center mb-4">
               Let’s Find Your Dream Home!
             </h2>
@@ -221,40 +264,49 @@ const TulipMonsella = () => {
               soon.
             </p>
 
-            <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black">
                   <i className="fas fa-user" />
                 </span>
+                
                 <input
                   type="text"
                   placeholder="Your Name"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  value={name}
+                  onChange={handleName}
+
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-black placeholder-black focus:outline-none text-white"
                 />
               </div>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black">
                   <i className="fas fa-envelope" />
                 </span>
                 <input
                   type="email"
                   placeholder="Your Email"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  value={email}
+                  onChange={handleEmail}
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-black placeholder-black focus:outline-none text-black"
                 />
               </div>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white">
+                <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black">
                   <i className="fas fa-phone" />
                 </span>
                 <input
                   type="tel"
                   placeholder="Your Number"
-                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-white placeholder-white focus:outline-none"
+                  value={phone}
+                  onChange={handlePhone}
+                  className="w-full pl-10 pr-4 py-2 rounded bg-transparent border-b border-black placeholder-black focus:outline-none text-black"
                 />
               </div>
               <button
+              onSubmit={handleSubmit}
                 type="submit"
-                className="w-full bg-white text-[#7A5520] font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
+                className="w-full bg-white text-[#333] font-semibold py-2 rounded mt-2 hover:bg-gray-200 transition"
               >
                 Reserve Your Spot
               </button>

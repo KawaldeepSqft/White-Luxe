@@ -1,4 +1,5 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -9,6 +10,36 @@ import {
 } from "react-icons/fa";
 
 const ReqCallBack = () => {
+
+  const [fullName, setFullName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [referral, setReferral] = useState("");
+  const [comments, setComments] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      fullName,
+      phone,
+      referral,
+      comments,
+    };
+
+    try {
+      const response = await axios.post("https://whitelux-backend.onrender.com/api/reqcall", formData);
+      alert(response.data.message || "✅ Form submitted successfully!");
+
+      // Reset form
+      setFullName("");
+      setPhone("");
+      setReferral("");
+      setComments("");
+    } catch (error) {
+      console.error(error);
+      alert("❌ Something went wrong! Please try again.");
+    }
+  };
   return (
     <section
       className="bg-cover bg-center bg-no-repeat py-20 px-4 md:px-10 md:py-10 text-white"
@@ -73,40 +104,48 @@ const ReqCallBack = () => {
           <h3 className="text-3xl font-serif text-[#AF882E] text-center mb-6">
             Request a Call Back
           </h3>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border border-gray-300 px-4 py-2 rounded"
-            />
-            <select className="w-full border border-gray-300 px-4 py-2 rounded text-gray-500">
-              <option>Choose Country</option>
-              <option>India</option>
-              <option>USA</option>
-              <option>UK</option>
-            </select>
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full border border-gray-300 px-4 py-2 rounded"
-            />
-            <input
-              type="text"
-              placeholder="How did you hear about us"
-              className="w-full border border-gray-300 px-4 py-2 rounded"
-            />
-            <textarea
-              placeholder="Comments"
-              rows="4"
-              className="w-full border border-gray-300 px-4 py-2 rounded resize-none"
-            />
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white py-2 rounded text-lg font-semibold tracking-wider hover:opacity-90 transition"
-            >
-              SUBMIT
-            </button>
-          </form>
+         <form onSubmit={handleSubmit} className="space-y-4">
+      <input
+        type="text"
+        placeholder="Full Name"
+        value={fullName}
+        onChange={(e) => setFullName(e.target.value)}
+        className="w-full border border-gray-300 px-4 py-2 rounded"
+        required
+      />
+
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
+        className="w-full border border-gray-300 px-4 py-2 rounded"
+        required
+      />
+
+      <input
+        type="text"
+        placeholder="How did you hear about us"
+        value={referral}
+        onChange={(e) => setReferral(e.target.value)}
+        className="w-full border border-gray-300 px-4 py-2 rounded"
+      />
+
+      <textarea
+        placeholder="Comments"
+        rows="4"
+        value={comments}
+        onChange={(e) => setComments(e.target.value)}
+        className="w-full border border-gray-300 px-4 py-2 rounded resize-none"
+      />
+
+      <button
+        type="submit"
+        className="w-full bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white py-2 rounded text-lg font-semibold tracking-wider hover:opacity-90 transition"
+      >
+        SUBMIT
+      </button>
+    </form>
         </div>
       </div>
     </section>
