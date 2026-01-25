@@ -132,7 +132,7 @@ const HeroSection = () => {
 <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
   {/* Call Button */}
   <a
-    href="tel:+919815202102" // <-- Apna phone number dalna
+    href="tel:+919958009492" // <-- Apna phone number dalna
     className="w-12 h-12 flex items-center justify-center rounded-full bg-[#D7AE29] text-white shadow-lg hover:scale-110 transition"
   >
     <BsTelephone size={22} />
@@ -140,7 +140,7 @@ const HeroSection = () => {
 
   {/* WhatsApp Button */}
   <a
-    href="https://wa.me/919815202102" // <-- Apna WhatsApp number dalna (country code ke sath)
+    href="https://wa.me/919958009492" // <-- Apna WhatsApp number dalna (country code ke sath)
     target="_blank"
     rel="noopener noreferrer"
     className="w-12 h-12 flex items-center justify-center rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition"

@@ -47,7 +47,7 @@ export default function Footer() {
             </li>
             <li className="flex items-start space-x-2">
               <BsTelephone className="mt-0.5 text-base" />
-              <span>9815202102</span>
+              <span>9958009492</span>
             </li>
             <li className="flex items-start space-x-2">
               <HiOutlineMail className="mt-0.5 text-lg" />

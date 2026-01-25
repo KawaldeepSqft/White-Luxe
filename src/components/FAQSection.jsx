@@ -36,7 +36,7 @@ export default function FAQSection() {
           We're here to help! Don’t hesitate—ask away and get the answers you need.
         </p>
         <button
-  onClick={() => window.open("https://wa.me/919815202102", "_blank")}
+  onClick={() => window.open("https://wa.me/919958009492", "_blank")}
   className="bg-gradient-to-r from-[#AF882E] to-[#D7AE29] text-white px-6 py-3 rounded-md hover:opacity-90 transition"
 >
   Contact Us

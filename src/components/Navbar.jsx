@@ -32,7 +32,7 @@ const navItems = [
       {/* Logo */}
       <a href="/">
         <div className="flex items-center gap-2 text-2xl font-bold text-[#AF882E]">
-          <img className="w-16" src="/img/logo.png" alt="logo" />
+          <img className="w-20" src="/img/logo.png" alt="logo" />
         </div>
       </a>
 
@@ -57,9 +57,9 @@ const navItems = [
 
       {/* Right Actions */}
       <div className="hidden md:flex items-center gap-4">
-        <a href="tel:+919815202102">
+        <a href="tel:+919958009492">
           <button className="bg-gradient-to-r from-[#D7AE29] to-[#FFF389] text-black font-semibold text-sm px-5 py-2 rounded-full shadow-md">
-            9815202102
+            9958009492
           </button>
         </a>
       </div>
@@ -91,9 +91,9 @@ const navItems = [
               {item.label}
             </Link>
           ))}
-          <a href="tel:+919815202102" className="w-full">
+          <a href="tel:+919958009492" className="w-full">
             <button className="mt-4 bg-gradient-to-r from-[#D7AE29] to-[#FFF389] text-black font-semibold text-sm px-5 py-2 rounded-full shadow-md w-full">
-              9815202102
+              9958009492
             </button>
           </a>
         </div>
