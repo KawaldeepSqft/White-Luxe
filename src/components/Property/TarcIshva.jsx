@@ -15,6 +15,7 @@ import img8 from "/img/background.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 const TarcIshva = () => {
@@ -218,7 +219,63 @@ const TarcIshva = () => {
     }
   };
   return (
-    <section
+
+<>
+
+<Helmet>
+    {/* Title */}
+    <title>
+      TARC Ishva Sector 63A Gurgaon | Luxury 4 BHK Apartments | White Luxe
+    </title>
+
+    {/* Meta Description */}
+    <meta
+      name="description"
+      content="TARC Ishva Sector 63A Gurgaon offers ultra-luxury 4 BHK apartments with world-class amenities, prime Golf Course Extension Road location, and premium lifestyle living. Enquire now with White Luxe Real Estate."
+    />
+
+    {/* Keywords */}
+    <meta
+      name="keywords"
+      content="TARC Ishva, TARC Ishva Gurgaon, TARC Ishva Sector 63A, luxury apartments Gurgaon, 4 BHK luxury apartments Gurgaon, Golf Course Extension Road projects, White Luxe Real Estate"
+    />
+
+    {/* Canonical */}
+    <link
+      rel="canonical"
+      href="https://www.whiteluxerealestate.com/properties/Tarc-Ishva"
+    />
+
+    {/* Open Graph */}
+    <meta property="og:title" content="TARC Ishva Sector 63A Gurgaon | Luxury 4 BHK Apartments" />
+    <meta
+      property="og:description"
+      content="Discover TARC Ishva in Sector 63A Gurgaon – ultra-luxury 4 BHK residences with premium amenities and strategic location on Golf Course Extension Road."
+    />
+    <meta
+      property="og:image"
+      content="https://www.whiteluxerealestate.com/img/Trac-ishca/Main-banner.webp"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.whiteluxerealestate.com/properties/Tarc-Ishva"
+    />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TARC Ishva Sector 63A Gurgaon | Luxury 4 BHK Apartments" />
+    <meta
+      name="twitter:description"
+      content="Explore TARC Ishva Gurgaon – premium 4 BHK luxury apartments with world-class amenities. Contact White Luxe Real Estate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.whiteluxerealestate.com/img/Trac-ishca/Main-banner.webp"
+    />
+  </Helmet>
+
+  <section
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/img/Trac-ishca/Main-banner.webp')" }}
     >
@@ -645,6 +702,10 @@ const TarcIshva = () => {
 
       <Footer />
     </section>
+
+</>
+
+  
   );
 };
 

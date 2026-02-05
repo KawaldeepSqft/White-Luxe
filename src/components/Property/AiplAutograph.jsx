@@ -15,6 +15,7 @@ import img6 from "/img/AiplAutograp/g8.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 const images = [img1, img2, img3, img4, img5, img6];
 
 const AiplAutograph = () => {
@@ -204,6 +205,71 @@ const [name, SetName]= useState("")
     }
   };
   return (
+
+
+
+<>
+  <Helmet>
+    {/* Title */}
+    <title>
+      AIPL Autograph Sector 108 Gurgaon | Premium Office & Retail Spaces | White Luxe
+    </title>
+
+    {/* Meta Description */}
+    <meta
+      name="description"
+      content="AIPL Autograph Sector 108 Gurgaon offers premium Grade-A office spaces, retail outlets, and restaurants with modern infrastructure and high ROI potential. Enquire now with White Luxe Real Estate."
+    />
+
+    {/* Keywords */}
+    <meta
+      name="keywords"
+      content="AIPL Autograph, AIPL Autograph Gurgaon, AIPL Autograph Sector 108, commercial property Gurgaon, office space Gurgaon, retail space Gurgaon, Grade A office space Gurgaon, White Luxe Real Estate"
+    />
+
+    {/* Canonical URL */}
+    <link
+      rel="canonical"
+      href="https://www.whiteluxerealestate.com/properties/Aipl-Autograph"
+    />
+
+    {/* Open Graph (Facebook / WhatsApp) */}
+    <meta
+      property="og:title"
+      content="AIPL Autograph Sector 108 Gurgaon | Premium Office & Retail Spaces"
+    />
+    <meta
+      property="og:description"
+      content="Explore AIPL Autograph Gurgaon – Grade A office spaces, retail outlets & dining options with modern design and strong commercial returns."
+    />
+    <meta
+      property="og:image"
+      content="https://www.whiteluxerealestate.com/img/AiplAutograp/b1.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.whiteluxerealestate.com/properties/Aipl-Autograph"
+    />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AIPL Autograph Gurgaon | Premium Commercial Property"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover AIPL Autograph Sector 108 Gurgaon – Grade A office & retail spaces with high ROI. Contact White Luxe Real Estate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.whiteluxerealestate.com/img/AiplAutograp/b1.jpg"
+    />
+  </Helmet>
+
+ 
+
     <section
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/img/AiplAutograp/b1.jpg')" }}
@@ -551,6 +617,10 @@ const [name, SetName]= useState("")
 
       <Footer />
     </section>
+
+
+</>
+
   );
 };
 

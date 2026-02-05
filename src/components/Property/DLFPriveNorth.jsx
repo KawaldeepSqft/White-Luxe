@@ -15,6 +15,7 @@ import img5 from "/img/DlfPrivena/g5.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
 import axios, { Axios } from "axios";
+import { Helmet } from "react-helmet";
 const images = [img1, img2, img3, img4, img5,];
 
 const DLFPrivanaNorth = () => {
@@ -152,6 +153,70 @@ const DLFPrivanaNorth = () => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
+
+<>
+  <Helmet>
+    {/* Title */}
+    <title>
+      DLF Privana North Sector 77 Gurgaon | Luxury Apartments & Penthouses
+    </title>
+
+    {/* Meta Description */}
+    <meta
+      name="description"
+      content="DLF Privana North Sector 77 Gurgaon offers ultra-luxury 4 BHK apartments & penthouses with world-class amenities on Southern Peripheral Road. Enquire now with White Luxe Real Estate."
+    />
+
+    {/* Keywords */}
+    <meta
+      name="keywords"
+      content="DLF Privana North, DLF Privana Gurgaon, DLF Privana Sector 77, luxury apartments Gurgaon, DLF luxury homes, penthouse Gurgaon, White Luxe Real Estate"
+    />
+
+    {/* Canonical */}
+    <link
+      rel="canonical"
+      href="https://www.whiteluxerealestate.com/properties/dlf-privana-north"
+    />
+
+    {/* Open Graph */}
+    <meta
+      property="og:title"
+      content="DLF Privana North Sector 77 Gurgaon | Ultra Luxury Residences"
+    />
+    <meta
+      property="og:description"
+      content="Explore DLF Privana North Gurgaon – premium 4 BHK residences & penthouses with luxury amenities and excellent connectivity."
+    />
+    <meta
+      property="og:image"
+      content="https://www.whiteluxerealestate.com/img/DlfPrivena/Banner.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.whiteluxerealestate.com/properties/dlf-privana-north"
+    />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="DLF Privana North Gurgaon | Luxury Apartments"
+    />
+    <meta
+      name="twitter:description"
+      content="Luxury living at DLF Privana North Sector 77 Gurgaon. Spacious 4 BHK homes & penthouses. Contact White Luxe Real Estate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.whiteluxerealestate.com/img/DlfPrivena/Banner.jpg"
+    />
+  </Helmet>
+
+  
+
+
     <section
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/img/DlfPrivena/Banner.jpg')" }}
@@ -568,6 +633,9 @@ const DLFPrivanaNorth = () => {
 
       <Footer />
     </section>
+
+</>
+
   );
 };
 

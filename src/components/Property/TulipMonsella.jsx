@@ -224,6 +224,75 @@ const TulipMonsella = () => {
     }
   };
   return (
+
+    <>
+    
+
+
+  <Helmet>
+    {/* Title */}
+    <title>
+      Tulip Monsella Sector 53 Gurgaon | Luxury 3, 4 & 5 BHK Apartments | White Luxe
+    </title>
+
+    {/* Meta Description */}
+    <meta
+      name="description"
+      content="Tulip Monsella Sector 53 Gurgaon offers ultra-luxury 3, 4 & 5 BHK apartments on Golf Course Road with premium amenities and iconic high-rise living. Enquire now with White Luxe Real Estate."
+    />
+
+    {/* Keywords */}
+    <meta
+      name="keywords"
+      content="Tulip Monsella, Tulip Monsella Gurgaon, Tulip Monsella Sector 53, luxury apartments Golf Course Road, 3 BHK luxury apartments Gurgaon, 4 BHK luxury apartments Gurgaon, 5 BHK luxury apartments Gurgaon, Tulip Group Gurgaon, White Luxe Real Estate"
+    />
+
+    {/* Canonical URL */}
+    <link
+      rel="canonical"
+      href="https://www.whiteluxerealestate.com/properties/Tulip-Monsella"
+    />
+
+    {/* Open Graph (Facebook / WhatsApp) */}
+    <meta
+      property="og:title"
+      content="Tulip Monsella Sector 53 Gurgaon | Luxury Apartments"
+    />
+    <meta
+      property="og:description"
+      content="Discover Tulip Monsella on Golf Course Road, Sector 53 Gurgaon – luxury 3, 4 & 5 BHK residences with world-class amenities."
+    />
+    <meta
+      property="og:image"
+      content="https://www.whiteluxerealestate.com/img/TulipMonsella/bannerr.avif"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.whiteluxerealestate.com/properties/Tulip-Monsella"
+    />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tulip Monsella Sector 53 Gurgaon | Luxury Apartments"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Tulip Monsella Gurgaon – premium 3, 4 & 5 BHK luxury homes on Golf Course Road. Contact White Luxe Real Estate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.whiteluxerealestate.com/img/TulipMonsella/bannerr.avif"
+    />
+  </Helmet>
+
+  
+
+
+
+
     <section
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/img/TulipMonsella/bannerr.avif')" }}
@@ -657,6 +726,9 @@ const TulipMonsella = () => {
 
       <Footer />
     </section>
+
+    </>
+
   );
 };
 

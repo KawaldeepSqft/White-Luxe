@@ -16,6 +16,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import Footer from "../Footer";
 const images = [img1, img2, img3, img4, img5,];
 import axios from "axios"
+import { Helmet } from "react-helmet";
 const GodrejAstra = () => {
   const units = [
     { type: "3 BHK + SR", size: "2970 - 3182 SQ.FT", price: "Price on call" },
@@ -219,6 +220,72 @@ const GodrejAstra = () => {
 
   
   return (
+
+
+<>
+  <Helmet>
+    {/* Title */}
+    <title>
+      Godrej Astra Sector 54 Gurgaon | Luxury 3 & 4 BHK Apartments | White Luxe
+    </title>
+
+    {/* Meta Description */}
+    <meta
+      name="description"
+      content="Godrej Astra Sector 54 Gurgaon offers ultra-luxury 3 & 4 BHK apartments on Golf Course Road with premium amenities, iconic design, and elite lifestyle. Enquire now with White Luxe Real Estate."
+    />
+
+    {/* Keywords */}
+    <meta
+      name="keywords"
+      content="Godrej Astra, Godrej Astra Gurgaon, Godrej Astra Sector 54, luxury apartments Golf Course Road, 3 BHK luxury apartments Gurgaon, 4 BHK luxury apartments Gurgaon, Godrej Properties Gurgaon, White Luxe Real Estate"
+    />
+
+    {/* Canonical URL */}
+    <link
+      rel="canonical"
+      href="https://www.whiteluxerealestate.com/properties/Godrej-Astra"
+    />
+
+    {/* Open Graph (Facebook / WhatsApp) */}
+    <meta
+      property="og:title"
+      content="Godrej Astra Sector 54 Gurgaon | Luxury 3 & 4 BHK Apartments"
+    />
+    <meta
+      property="og:description"
+      content="Explore Godrej Astra on Golf Course Road, Sector 54 Gurgaon – ultra-luxury residences with world-class amenities and premium lifestyle."
+    />
+    <meta
+      property="og:image"
+      content="https://www.whiteluxerealestate.com/img/Godrej-Astra/Hero.webp"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.whiteluxerealestate.com/properties/Godrej-Astra"
+    />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Godrej Astra Sector 54 Gurgaon | Luxury Apartments"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover Godrej Astra Gurgaon – premium 3 & 4 BHK luxury homes on Golf Course Road. Contact White Luxe Real Estate."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.whiteluxerealestate.com/img/Godrej-Astra/Hero.webp"
+    />
+  </Helmet>
+
+ 
+
+
+
     <section
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/img/Godrej-Astra/Hero.webp')" }}
@@ -651,6 +718,9 @@ const GodrejAstra = () => {
 
       <Footer />
     </section>
+
+</>
+
   );
 };
 
